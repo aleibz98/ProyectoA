@@ -1,2 +1,2 @@
 # ProyectoA
-Proyecto Algorítmica Hashiny y Filtros de Bloom
+Proyecto Algorítmica Hashing y Filtros de Bloom
