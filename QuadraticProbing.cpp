@@ -138,3 +138,6 @@ int main(){
   cout << "Total comandes: " << totalErase + totalInsert + totalSearch << endl;
   */
 }
+
+
+//TODO Implementar variables que trackeen los espacios ocupados de la tabla

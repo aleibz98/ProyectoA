@@ -78,6 +78,22 @@ void instrucciones(){
   */
 }
 
+void stats() {
+    cout << "Colisions Insert: " << colisionsInsert << endl;
+    cout << "Colisions Search: " << colisionsSearch << endl;
+    cout << "Colisions Erase: " << colisionsErase << endl;
+    cout << "Colisions Totals: " << colisionsErase + colisionsInsert + colisionsSearch << endl;
+
+    cout << "Total Insert: " << totalInsert << endl;
+    cout << "Total Search: " << totalSearch << endl;
+    cout << "Total Erase: " << totalErase << endl;
+    cout << "Total comandes: " << totalErase + totalInsert + totalSearch << endl;
+
+    cout << "Hits: " << hit << endl;
+    cout << "Misses: " << miss << endl;
+    cout << "Ratio de ocupacion: " << ocupacion << endl;
+}
+
 //FUNCIÓN DE EJECUCIÓN - Función que lleva a cabo el uso principal del programa.
 void ejecucion(){
   //cout << "Introduzca el tamaño de la tabla" << endl;
@@ -86,7 +102,7 @@ void ejecucion(){
   int key;
   cin >> key;
   //cout << "Inserte caso" << endl;
-  while (key != 0)
+  while (key != 0){
     bool result = insert(key);
     cin >> key;
   }
@@ -94,24 +110,14 @@ void ejecucion(){
       cin >> key;
       int result = search(key);
   } while (key != 0);
+  return;
 }
 
 int main(){
   //instrucciones();
   colisionsSearch = colisionsErase = colisionsInsert = totalErase = totalInsert = totalSearch = hit = miss = ocupacion = 0;
   ejecucion();
-
-  /*
-  cout << "Colisions Insert: " << colisionsInsert << endl;
-  cout << "Colisions Search: " << colisionsSearch << endl;
-  cout << "Colisions Erase: " << colisionsErase << endl;
-  cout << "Colisions Totals: " << colisionsErase + colisionsInsert + colisionsSearch << endl;
-
-  cout << "Total Insert: " << totalInsert << endl;
-  cout << "Total Search: " << totalSearch << endl;
-  cout << "Total Erase: " << totalErase << endl;
-  cout << "Total comandes: " << totalErase + totalInsert + totalSearch << endl;
-  */
+  stats();
 }
 
 //TODO Implementar variables que trackeen los espacios ocupados de la tabla
