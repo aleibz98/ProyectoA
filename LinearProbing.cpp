@@ -8,7 +8,7 @@ using namespace std;
 
 vector<int> hashTable;
 int size;
-int colisionsInsert, colisionsSearch, colisionsErase, totalInsert, totalSearch, totalErase;
+int colisionsInsert, colisionsSearch, totalInsert, totalSearch;
 int hit, miss;
 float ocupacion;
 
@@ -53,7 +53,7 @@ int HashFunction(int key){
 }
 
 //FUNCIÓN DE INSERCIÓN - Inserta en la tabla el conjunto clave-valor que se pasa como parámetro según la descripción del hashing de "Linear Probing"
-bool insert(int key){
+void insert(int key){
   totalInsert++;
   int position = HashFunction(key);
   for(int i = 0; i < size; ++i){
@@ -68,7 +68,7 @@ bool insert(int key){
 }
 
 //FUNCIÓN DE BÚSQUEDA - Devuelve el valor asociado a la clave que se pasa como parámetro, o 0 si esta clave no aparece en la tabla.
-double search(int key){
+int search(int key){
   totalSearch++;
   int position = HashFunction(key);
   for(int i = 0; i < size; ++i){
@@ -78,21 +78,6 @@ double search(int key){
     } else colisionsSearch++; miss++;
   }
   return 0;
-}
-
-//FUNCIÓN DE ELIMINACIÓN - Elimina la clave y su valor asociado en la tabla y retorna TRUE. Si no se puede encontrar la clave retorna FALSO.
-bool erase(int key){
-  totalErase++;
-  int position = HashFunction(key);
-  for(int i = 0; i < size; ++i){
-    if(hashTable[(position + i)%size] == key){
-      hashTable[position] = 0;
-      hit++;
-      ocupacion -= 1.0 / size;
-      return true;
-    } else colisionsErase++; miss++;
-  }
-  return false;
 }
 
 //FUNCIÓN DE INSTRUCCIONES - Muestra por la salida estándar las Instrucciones para el correcto uso del programa.
@@ -125,11 +110,15 @@ void ejecucion(){
   cin >> size;
   initHashTable();
   int key;
+
+  //Inserts
   cin >> key;
   while (key != 0){
     bool result = insert(key);
     cin >> key;
   }
+
+  //Searches
   do{
       cin >> key;
       int result = search(key);
