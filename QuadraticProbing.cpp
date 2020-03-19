@@ -16,10 +16,26 @@ void initHashTable(){
   hashTable.resize(size, 0);
 }
 
+//Hashing Function Jenkins
+int Jenkins(int key){
+    int i=0;
+    double pos = 0;
+    while(i != size){
+        pos += (key / (int)(pow(2.0, i)) )%2;
+        pos += pos * pow(2.0, 10.0);
+        pos = myXOR(pos, pos / pow(2,6));
+        i++;
+    }
+    pos += pos * pow(2,3);
+    pos = myXOR(pos, pos / pow(2,11));
+    pos += pos * pow(2,15);
+    return pos;
+}
+
 int HashFunction(int key){
   //Get position from AUXILIAR hash function
   //Shall we use MD5 or SHA?
-  return key%size;
+  return Jenkins(key);
 }
 
 //FUNCIÓN DE INSERCIÓN - Inserta en la tabla el conjunto clave-valor que se pasa como parámetro según la descripción del hashing de "Quadratic Probing"
