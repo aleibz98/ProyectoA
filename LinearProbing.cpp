@@ -69,13 +69,9 @@ bool erase(int key){
 void instrucciones(){
   cout << "GUÍA PARA EL USO DE LINEAR PROBING" << endl;
   cout << "En primer lugar introduzca el tamaño de la tabla que desea crear" << endl;
+  cout << "A continuacion las claves que se quieren insertar finalizando con un '0'" << endl;
+  cout << "Finalmente las claves que se desea buscar en la tabla, finalizando con un '0'" << endl;
   cout << "Las claves deben ser enteros mayores que 0" << endl;
-  /*
-  cout << "Para insertar, introduzca 1 seguido de la clave y el valor." << endl;
-  cout << "Para buscar, introduzca 2 seguido de la clave" << endl;
-  cout << "Para eliminar, introduzca 3 seguido de la clave" << endl;
-  cout << "Para mostrar todos los huecos ocupados de la tabla con su correspondiente clave-valor, introduzca 4" << endl;
-  */
 }
 
 void stats() {
@@ -101,7 +97,6 @@ void ejecucion(){
   initHashTable();
   int key;
   cin >> key;
-  //cout << "Inserte caso" << endl;
   while (key != 0){
     bool result = insert(key);
     cin >> key;
@@ -119,5 +114,3 @@ int main(){
   ejecucion();
   stats();
 }
-
-//TODO Implementar variables que trackeen los espacios ocupados de la tabla
