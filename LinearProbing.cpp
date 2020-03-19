@@ -2,6 +2,7 @@
 #include <vector>
 #include <utility>
 #include <string>
+#include <cmath>
 
 using namespace std;
 
@@ -16,8 +17,22 @@ void initHashTable(){
   hashTable.resize(size, 0);
 }
 
+int myXOR(int x, int y){
+    int res = 0;
+    for (int j = 31; j>=0; j--){
+        bool b1 = x & (1<<j);
+        bool b2 = y & (1<<j);
+
+        bool xoredBit = (b1&b2) ? 0 : (b1|b2);
+
+        res <<= 1;
+        res |= xoredBit;
+    }
+    return res;
+}
+
 //Hashing Function Jenkins
-int jenkins(int key){
+int Jenkins(int key){
     int i=0;
     double pos = 0;
     while(i != size){
@@ -46,7 +61,7 @@ bool insert(int key){
     if(hashTable[(position + i)%size] == 0){
       hashTable[(position + i)%size] = key;
       hit++;
-      ocupacion += 1 / size;
+      ocupacion += 1.0 / size;
       return true;
     } else colisionsInsert++; miss++;
   }
@@ -74,7 +89,7 @@ bool erase(int key){
     if(hashTable[(position + i)%size] == key){
       hashTable[position] = 0;
       hit++;
-      ocupacion -= 1 / size;
+      ocupacion -= 1.0 / size;
       return true;
     } else colisionsErase++; miss++;
   }
