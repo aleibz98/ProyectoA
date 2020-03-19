@@ -49,7 +49,6 @@ int Jenkins(int key){
 
 int HashFunction(int key){
   //Get position from AUXILIAR hash function
-  //Shall we use MD5 or SHA?
   return Jenkins(key);
 }
 
@@ -123,7 +122,6 @@ void stats() {
 
 //FUNCIÓN DE EJECUCIÓN - Función que lleva a cabo el uso principal del programa.
 void ejecucion(){
-  //cout << "Introduzca el tamaño de la tabla" << endl;
   cin >> size;
   initHashTable();
   int key;

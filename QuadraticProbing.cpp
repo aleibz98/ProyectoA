@@ -2,6 +2,7 @@
 #include <vector>
 #include <utility>
 #include <string>
+#include <cmath>
 
 using namespace std;
 
@@ -14,6 +15,20 @@ float ocupacion;
 
 void initHashTable(){
   hashTable.resize(size, 0);
+}
+
+int myXOR(int x, int y){
+    int res = 0;
+    for (int j = 31; j>=0; j--){
+        bool b1 = x & (1<<j);
+        bool b2 = y & (1<<j);
+
+        bool xoredBit = (b1&b2) ? 0 : (b1|b2);
+
+        res <<= 1;
+        res |= xoredBit;
+    }
+    return res;
 }
 
 //Hashing Function Jenkins
@@ -34,7 +49,6 @@ int Jenkins(int key){
 
 int HashFunction(int key){
   //Get position from AUXILIAR hash function
-  //Shall we use MD5 or SHA?
   return Jenkins(key);
 }
 
@@ -47,6 +61,7 @@ bool insert(int key){
     if(hashTable[access%size] == 0){
       hashTable[access%size] = key;
       hit++;
+      ocupacion += 1.0 / size;
       return true;
     } else colisionsInsert++; miss++;
   }
@@ -76,6 +91,7 @@ bool erase(int key){
     if(hashTable[access%size] == key){
       hashTable[access%size] = 0;
       hit++;
+      ocupacion -= 1.0/size;
       return true;
     } else colisionsErase++; miss++;
   }
@@ -110,7 +126,6 @@ void stats() {
 
 //FUNCIÓN DE EJECUCIÓN - Función que lleva a cabo el uso principal del programa.
 void ejecucion(){
-  //cout << "Introduzca el tamaño de la tabla" << endl;
     cin >> size;
     initHashTable();
     int key;
@@ -128,11 +143,10 @@ void ejecucion(){
 
 int main(){
   //instrucciones();
-  c1 = c2 = 0.5;
+  c1 = c2 = 0.2;
   colisionsSearch = colisionsErase = colisionsInsert = totalErase = totalInsert = totalSearch = hit = miss = ocupacion = 0;
   ejecucion();
   stats();
 }
 
-
-//TODO Implementar variables que trackeen los espacios ocupados de la tabla
+//TODO ¿Por qué varía el ratio de ocupación cuando modificamos las dos constantes c1 y c2?
