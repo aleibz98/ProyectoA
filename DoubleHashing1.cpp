@@ -125,6 +125,8 @@ int main(){
 	occuped_space = 0;
 	miss_insert = 0;
 	hit_insert = 0;
+	miss_search = 0;
+	hit_search = 0;
 
 	initHashTable();
 
