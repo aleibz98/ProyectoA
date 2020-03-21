@@ -3,6 +3,7 @@
 #include <string>
 #include <utility>
 #include <cmath>
+#include <sstream>
 using namespace std;
 
 vector<int> hashTable1;
@@ -57,6 +58,22 @@ void print(){
 	cout << "[OCCUPED TOTAL]= " << occuped_space1+occuped_space2 << endl;
 }
 
+void printBitVec(vector<char> v){
+	for(int i = 0; i<v.size(); i++) cout << v[i];
+	cout << endl;
+}
+
+vector<char> getBit(int n){
+	vector<char> v(32,'0');
+	int b=0;
+	while(n>0){
+		v[b] += (char)n%2;
+		n = n/2;
+		b++;
+	}
+	return v;
+}
+
 //First Hash function
 int hash_f1(int key){ // Hash function 1
 	return key;
@@ -68,11 +85,14 @@ int hash_f2(int key){ // Hash function 1
 }
 
 //Hashing Function Jenkins one at a time
-/*int joaat(int key){
+int joaat(int key){
 	int i=0;
-	double pos = 0;
+	unsigned char pos = 0;
+	vector<char> bitKey = getBit(key);
+	printBitVec(bitKey);
 	while(i != size){
-		pos += (key / (int)(pow(2, i)) )%2;
+		cout << "[" << i << "]" << " pos += bitKey[i] pos = " << pos << " bitKey[i] = " << bitKey[i] << endl;
+		pos += bitKey[i];
 		pos += pos * pow(2.0, 10.0);
 		pos = myXOR(pos, pos / pow(2,6));
 		i++;
@@ -80,8 +100,9 @@ int hash_f2(int key){ // Hash function 1
 	pos += pos * pow(2,3);
 	pos = myXOR(pos, pos / pow(2,11));
 	pos += pos * pow(2,15);
-	return (int)pos;
-}*/
+
+	return (unsigned int)pos;
+}
 
 //Function that given a key search if it is or not in the hash tables
 //return (1) CORRECT     (2) FULL     (3) CAN'T J>SIZE
@@ -158,6 +179,9 @@ int insert1(int key, int it){
 int main(){
 	cout << "Insert Hash size: " << endl;
 	cin >> size;
+
+	vector<char> hsh = getBit(43);
+
 	occuped_space1 = 0;
 	occuped_space2 = 0;
 	miss_insert = 0;
@@ -165,6 +189,11 @@ int main(){
 	miss_search = 0;
 	hit_search = 0;
 	it = 0;
+
+	int test;
+	cout << "insert per a fer joaat de: " << endl;
+	cin >> test;
+	cout << "el joaat de: " << test << " es; " << joaat(test) << endl;
 
 	initHashTable();
 
