@@ -83,24 +83,22 @@ int hash_f2(int key){ // Hash function 1
 	return (int)pos;
 }*/
 
-//Function that given a key search if it is or not in the hash table
+//Function that given a key search if it is or not in the hash tables
 //return (1) CORRECT     (2) FULL     (3) CAN'T J>SIZE
-/*bool search(int key){
+bool search(int key){
 	int j = 0;
-	int valuef1 = hash_f1(key); // We calculate position given by 1st Hash Function
-	int valuef2 = joaat(key); // We calculate position given by 2nd Hash Function
-	int dhval = (valuef1+valuef2*j)%size; //Double hashing value j=0
-	while(hashTable[dhval] != key){	// Hash position not empty
-		if(j == size) return false;	//if j too big return "can't insert"
-		miss_search++;
-		j++;
-		dhval = (valuef1+valuef2*j);
-		cout << "bucle; " << j << "val f1: " << valuef1 << " val f2: " << valuef2 << endl;
+	int valuef1 = hash_f1(key)%size; // We calculate position given by 1st Hash Function
+	int valuef2 = hash_f2(key)%size; // We calculate position given by 2nd Hash Function
+	//cout << "searching key: " << key << " v1: " << valuef1 << " v2: " << valuef2 << endl; 
+	if(hashTable1[valuef1] == key | hashTable2[valuef2] == key){
+		hit_search++;
+		return true;
 	}
-	//Found an empty position
-	hit_search++;
-	return true;
-}*/
+	else{
+		miss_search++;
+		return false;
+	}
+}
 
 //Function that inserts a key into the hash table using CuckooHashing
 //return (1) CORRECT     (2) FULL     (3) CAN'T J>SIZE
@@ -186,11 +184,11 @@ int main(){
 	}
 	cout << "Any keys you want to search in the HashTable: (! End with a 0)" << endl;
 	cin >> key;
-	/*while(key != 0){ //SEARCH
+	while(key != 0){ //SEARCH
 		bool result = search(key);
 		if(!result) cout << "Key NOT found!" << endl;
 		else cout << "Key found!" << endl;
 		cin >> key;
-	}*/
+	}
 	print(); //PRINT
 }
