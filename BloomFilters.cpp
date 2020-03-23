@@ -12,17 +12,17 @@ float falsePositive;
 
 int hashFunction1(int key){
     //returns the index of the bit to be changed by the hashFunction
-
+    return 0;
 }
 
 int hashFunction2(int key){
     //returns the index of the bit to be changed by the hashFunction
-
+    return 0;
 }
 
 int hashFunction3(int key){
     //returns the index of the bit to be changed by the hashFunction
-
+    return 0;
 }
 
 void insertKey(int key){

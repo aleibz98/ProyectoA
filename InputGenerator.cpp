@@ -10,21 +10,46 @@ using namespace std;
  *      - La semilla para generar los números aleatorios
  *      - El tamaño de la tabla
  *      - El ratio de ocupación deseado (en tanto por ciento, es decir, 1 < ratio < 100;
+ *
+ * El programa genera una linea de 'size' números naturales aleatorios terminada en 0;
+ * y una segunda linea de 'size'/3 números que han sido printados en la linea anterior, finalizada también en 0.
  */
+
+
 int main(){
-    int seed, size, ratio;
-    vector<int> keys = vector<int> (size);
+    int seed,size;
+    double ratio;
     cin >> seed >> size >> ratio;
+    ratio = ratio / 100;
+    vector<int> keys = vector<int> (int(size*ratio),-1);
+
+    //print size
     cout << size << endl;
-    for(int i = 0; i < size * ratio/100; ++i){
+
+    //print inserts
+    for(int i = 0; i < int(size * ratio); ++i){
         int a = rand();
         cout << a << " ";
         keys[i] = a;
     }
+
+    //print separator insert-search
     cout << "0" << endl;
-    for(int i = 0; i < size * ratio/100 / 3; ++i){
-        int a = rand() % size;
+
+    //print searches previously inserted
+    for(int i = 0; i < 2 * int(size * ratio / 3.0); ++i){
+        int a = rand() % int(size*ratio);
         cout << keys[a] << " ";
     }
+
+    //print separator
     cout << "0" << endl;
+
+    //print searches not inserted
+    for(int i = 0; i < 2 * int(size*ratio/3.0); ++i){
+        cout << rand() << " ";
+    }
+
+    //print end of file
+    cout << " " << endl;
 }

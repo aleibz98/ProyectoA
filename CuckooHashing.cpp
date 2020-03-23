@@ -104,7 +104,7 @@ int joaat(int key){
 	return (unsigned int)pos;
 }
 
-//Function that given a key search if it is or not in the hash tables
+//Function that given a key search if it is or not in the hash table
 //return (1) CORRECT     (2) FULL     (3) CAN'T J>SIZE
 bool search(int key){
 	int j = 0;
