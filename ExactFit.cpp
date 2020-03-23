@@ -80,6 +80,14 @@ int main(){
     
   }
   
+    cin >> key;
+  
+  while(key != 0){
+    search(Tabla,key);
+    cin >> key;
+    
+  }
+  
   
   cout << "miss: " << miss << endl;
   cout << "hit: " << hit << endl;
