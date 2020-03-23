@@ -92,6 +92,15 @@ int main(){
     cin >> key;
     
   }
+	
+	
+   cin >> key;
+  
+  while(key != 0){
+    search(Tabla,key);
+    cin >> key;
+    
+  }
   
   
   cout << "miss: " << miss << endl;
