@@ -136,6 +136,14 @@ int main(){
     
   }
   
+    cin >> key;
+  
+  while(key != 0){
+    search(Tabla,key);
+    cin >> key;
+    
+  }
+  
   
   cout << "Miss: " << miss << endl;
   cout << "Hit: " << hit << endl;
