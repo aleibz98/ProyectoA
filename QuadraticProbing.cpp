@@ -108,14 +108,18 @@ void stats() {
     cout << "Ratio de ocupación " << ocupacion << endl;
 }
 
+int findNext2Pot(int i){
+    //Feísimo el cálculo, pero funciona :)
+    int ret = int(pow(2.0,float(int(log(i)/log(2.0)+1))));
+    return ret;
+}
+
 
 //FUNCIÓN DE EJECUCIÓN - Función que lleva a cabo el uso principal del programa.
 void ejecucion(){
-    int cc1, cc2;
-    cin >> cc1 >> cc2;
-    c1 = cc1/10;
-    c2 = cc2/10;
-    cin >> size;
+    int i;
+    cin >> i;
+    size = findNext2Pot(i);
     initHashTable();
     int key;
 
@@ -142,6 +146,8 @@ void ejecucion(){
 
 int main(){
   //instrucciones();
+      c1 = 0.5;
+      c2 = 0.5;
       colisionsSearch = colisionsInsert = totalInsert = totalSearch = hit = miss = ocupacion = 0;
       ejecucion();
       stats();
