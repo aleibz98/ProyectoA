@@ -102,6 +102,8 @@ void stats() {
     cout << "Hits " << hit << endl;
     cout << "Misses " << miss << endl;
     cout << "Ratio de ocupacion " << ocupacion << endl;
+
+    //TODO Implemetar número esperado de misses
 }
 
 //FUNCIÓN DE EJECUCIÓN - Función que lleva a cabo el uso principal del programa.

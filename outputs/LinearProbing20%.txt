@@ -1,10 +1,10 @@
 Linear Probing
 Colisions Insert 4950
-Colisions Search 36546
-Colisions Totals 41496
+Colisions Search 110078
+Colisions Totals 115028
 Total Insert 100
-Total Search 134
-Total comandes 234
-Hits 168
-Misses 41496
+Total Search 402
+Total comandes 502
+Hits 302
+Misses 115028
 Ratio de ocupacion 0.2

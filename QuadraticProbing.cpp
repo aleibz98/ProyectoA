@@ -92,24 +92,29 @@ void instrucciones() {
 }
 
 void stats() {
-    cout << "Colisions Insert: " << colisionsInsert << endl;
-    cout << "Colisions Search: " << colisionsSearch << endl;
-    cout << "Colisions Erase: " << colisionsErase << endl;
-    cout << "Colisions Totals: " << colisionsErase + colisionsInsert + colisionsSearch << endl;
+    cout << "Quadratic Probing" << endl;
+    cout << "c1 " << c1 << endl;
+    cout << "c2 " << c2 << endl;
+    cout << "Colisions Insert " << colisionsInsert << endl;
+    cout << "Colisions Search " << colisionsSearch << endl;
+    cout << "Colisions Totals " << colisionsInsert + colisionsSearch << endl;
 
-    cout << "Total Insert: " << totalInsert << endl;
-    cout << "Total Search: " << totalSearch << endl;
-    cout << "Total Erase: " << totalErase << endl;
-    cout << "Total comandes: " << totalErase + totalInsert + totalSearch << endl;
+    cout << "Total Inserts " << totalInsert << endl;
+    cout << "Total Searches " << totalSearch << endl;
+    cout << "Total comandes " << totalInsert + totalSearch << endl;
 
-    cout << "Hits: " << hit << endl;
-    cout << "Misses: " << miss << endl;
-    cout << "Ratio de ocupacion: " << ocupacion << endl;
+    cout << "Hits " << hit << endl;
+    cout << "Misses " << miss << endl;
+    cout << "Ratio de ocupación " << ocupacion << endl;
 }
 
 
 //FUNCIÓN DE EJECUCIÓN - Función que lleva a cabo el uso principal del programa.
 void ejecucion(){
+    int cc1, cc2;
+    cin >> cc1 >> cc2;
+    c1 = cc1/10;
+    c2 = cc2/10;
     cin >> size;
     initHashTable();
     int key;
@@ -121,7 +126,13 @@ void ejecucion(){
         cin >> key;
     }
 
-    //Searches
+    //Searches for already inserted keys
+    do{
+        cin >> key;
+        int result = search(key);
+    } while (key != 0);
+
+    //Searches for non inserted keys
     do{
         cin >> key;
         int result = search(key);
@@ -131,10 +142,9 @@ void ejecucion(){
 
 int main(){
   //instrucciones();
-  c1 = c2 = 0.2;
-  colisionsSearch = colisionsErase = colisionsInsert = totalErase = totalInsert = totalSearch = hit = miss = ocupacion = 0;
-  ejecucion();
-  stats();
+      colisionsSearch = colisionsInsert = totalInsert = totalSearch = hit = miss = ocupacion = 0;
+      ejecucion();
+      stats();
 }
 
 //TODO ¿Por qué varía el ratio de ocupación cuando modificamos las dos constantes c1 y c2?

@@ -37,7 +37,7 @@ int main(){
     cout << "0" << endl;
 
     //print searches previously inserted
-    for(int i = 0; i < 2 * int(size * ratio / 3.0); ++i){
+    for(int i = 0; i < 2 * int(size * ratio); ++i){
         int a = rand() % int(size*ratio);
         cout << keys[a] << " ";
     }
@@ -46,7 +46,7 @@ int main(){
     cout << "0" << endl;
 
     //print searches not inserted
-    for(int i = 0; i < 2 * int(size*ratio/3.0); ++i) {
+    for(int i = 0; i < 2 * int(size*ratio); ++i) {
         cout << rand() << " ";
     }
 
