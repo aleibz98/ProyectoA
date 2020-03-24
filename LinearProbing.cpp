@@ -61,10 +61,10 @@ void insert(int key){
       hashTable[(position + i)%size] = key;
       hit++;
       ocupacion += 1.0 / size;
-      return true;
+      return;
     } else colisionsInsert++; miss++;
   }
-  return false;
+  return;
 }
 
 //FUNCIÓN DE BÚSQUEDA - Devuelve el valor asociado a la clave que se pasa como parámetro, o 0 si esta clave no aparece en la tabla.
@@ -90,19 +90,18 @@ void instrucciones(){
 }
 
 void stats() {
-    cout << "Colisions Insert: " << colisionsInsert << endl;
-    cout << "Colisions Search: " << colisionsSearch << endl;
-    cout << "Colisions Erase: " << colisionsErase << endl;
-    cout << "Colisions Totals: " << colisionsErase + colisionsInsert + colisionsSearch << endl;
+    cout << "Linear Probing" << endl;
+    cout << "Colisions Insert " << colisionsInsert << endl;
+    cout << "Colisions Search " << colisionsSearch << endl;
+    cout << "Colisions Totals " <<  colisionsInsert + colisionsSearch << endl;
 
-    cout << "Total Insert: " << totalInsert << endl;
-    cout << "Total Search: " << totalSearch << endl;
-    cout << "Total Erase: " << totalErase << endl;
-    cout << "Total comandes: " << totalErase + totalInsert + totalSearch << endl;
+    cout << "Total Insert " << totalInsert << endl;
+    cout << "Total Search " << totalSearch << endl;
+    cout << "Total comandes " <<  totalInsert + totalSearch << endl;
 
-    cout << "Hits: " << hit << endl;
-    cout << "Misses: " << miss << endl;
-    cout << "Ratio de ocupacion: " << ocupacion << endl;
+    cout << "Hits " << hit << endl;
+    cout << "Misses " << miss << endl;
+    cout << "Ratio de ocupacion " << ocupacion << endl;
 }
 
 //FUNCIÓN DE EJECUCIÓN - Función que lleva a cabo el uso principal del programa.
@@ -114,11 +113,18 @@ void ejecucion(){
   //Inserts
   cin >> key;
   while (key != 0){
-    bool result = insert(key);
-    cin >> key;
+      insert(key);
+      cin >> key;
   }
 
-  //Searches
+  //Searches for already inserted keys
+  do{
+      cin >> key;
+      int result = search(key);
+  } while (key != 0);
+
+
+  //Searches for non inserted keys
   do{
       cin >> key;
       int result = search(key);
@@ -128,7 +134,7 @@ void ejecucion(){
 
 int main(){
   //instrucciones();
-  colisionsSearch = colisionsErase = colisionsInsert = totalErase = totalInsert = totalSearch = hit = miss = ocupacion = 0;
+  colisionsSearch = colisionsInsert = totalInsert = totalSearch = hit = miss = ocupacion = 0;
   ejecucion();
   stats();
 }

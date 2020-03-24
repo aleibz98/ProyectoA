@@ -46,10 +46,10 @@ int main(){
     cout << "0" << endl;
 
     //print searches not inserted
-    for(int i = 0; i < 2 * int(size*ratio/3.0); ++i){
+    for(int i = 0; i < 2 * int(size*ratio/3.0); ++i) {
         cout << rand() << " ";
     }
 
     //print end of file
-    cout << " " << endl;
+    cout << "0" << endl;
 }
