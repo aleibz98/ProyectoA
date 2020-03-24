@@ -1,10 +1,11 @@
 Linear Probing
-Colisions Insert 101025
-Colisions Search 650378
-Colisions Totals 751403
+Colisions Insert 1199
+Colisions Search 21800
+Colisions Totals 22999
 Total Insert 450
 Total Search 1802
 Total comandes 2252
-Hits 1352
-Misses 751403
 Ratio de ocupacion 0.899996
+Media probes teórica: 5.49978
+Media probes empírica insertados: 3.80466
+Media probes empírica no insertados: 20.3907

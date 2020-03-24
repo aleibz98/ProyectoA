@@ -9,14 +9,13 @@ using namespace std;
 vector<int> hashTable;
 int size;
 float c1, c2;
-int colisionsInsert, colisionsSearch, totalInsert, totalSearch;
-int hit, miss;
+int colisionsInsert, colisionsSearch1, colisionsSearch2, totalInsert, totalSearch1, totalSearch2;
 float ocupacion;
 
 void initHashTable(){
   hashTable.resize(size, 0);
 }
-
+/*
 int myXOR(int x, int y){
     int res = 0;
     for (int j = 31; j>=0; j--){
@@ -46,10 +45,11 @@ int Jenkins(int key){
     pos += pos * pow(2,15);
     return pos;
 }
-
+*/
 int HashFunction(int key){
   //Get position from AUXILIAR hash function
-  return Jenkins(key);
+  //return Jenkins(key);
+  return key%size;
 }
 
 //FUNCIÓN DE INSERCIÓN - Inserta en la tabla el conjunto clave-valor que se pasa como parámetro según la descripción del hashing de "Quadratic Probing"
@@ -58,26 +58,33 @@ void insert(int key){
   int position = HashFunction(key);
   for(int i = 0; i < size; ++i){
     int access = position + c1*i + c2*i*i;
-    if(hashTable[access%size] == 0){
-      hashTable[access%size] = key;
-      hit++;
-      ocupacion += 1.0 / size;
-      return;
-    } else colisionsInsert++; miss++;
+    if(hashTable[access%size] == 0) {
+        hashTable[access % size] = key;
+        ocupacion += 1.0 / size;
+        return;
+    } else if (hashTable[access % size] == key){
+        return;
+    } else {
+        colisionsInsert++;
+    }
   }
   return;
 }
 
 //FUNCIÓN DE BÚSQUEDA - Devuelve el valor asociado a la clave que se pasa como parámetro, o 0 si esta clave no aparece en la tabla.
-int search(int key){
+int search(int key, int &colisionsSearch, int &totalSearch){
   totalSearch++;
   int position = HashFunction(key);
   for(int i = 0; i < size; ++i){
     int access = position + c1*i + c2*i*i;
     if(hashTable[access%size] == key){
-      hit++;
+      colisionsSearch++;
       return hashTable[access%size];
-    } else colisionsSearch++; miss++;
+    } else if(hashTable[access%size] == 0) {
+        return 0;
+    }else{
+        colisionsSearch++;
+    }
   }
   return 0;
 }
@@ -96,16 +103,20 @@ void stats() {
     cout << "c1 " << c1 << endl;
     cout << "c2 " << c2 << endl;
     cout << "Colisions Insert " << colisionsInsert << endl;
-    cout << "Colisions Search " << colisionsSearch << endl;
-    cout << "Colisions Totals " << colisionsInsert + colisionsSearch << endl;
+    cout << "Colisions Search " << colisionsSearch1 + colisionsSearch2 << endl;
+    cout << "Colisions Totals " << colisionsInsert + colisionsSearch1 + colisionsSearch2 << endl;
 
     cout << "Total Inserts " << totalInsert << endl;
-    cout << "Total Searches " << totalSearch << endl;
-    cout << "Total comandes " << totalInsert + totalSearch << endl;
+    cout << "Total Searches " << totalSearch1 + totalSearch2 << endl;
+    cout << "Total comandes " << totalInsert + totalSearch1 + totalSearch2 << endl;
 
-    cout << "Hits " << hit << endl;
-    cout << "Misses " << miss << endl;
     cout << "Ratio de ocupación " << ocupacion << endl;
+
+    cout << "Media probes teórica: " << 1 - log(1-ocupacion) - ocupacion/2 << endl;
+    cout << "Media probes empírica insertados: " << (colisionsSearch1)/float(totalSearch1) << endl;
+    cout << "Media probes empírica no insertados: " << (colisionsSearch2)/float(totalSearch2) << endl;
+
+    return;
 }
 
 int findNext2Pot(int i){
@@ -131,15 +142,15 @@ void ejecucion(){
     }
 
     //Searches for already inserted keys
-    do{
+   do{
         cin >> key;
-        int result = search(key);
+        int result = search(key, colisionsSearch1, totalSearch1);
     } while (key != 0);
 
     //Searches for non inserted keys
     do{
         cin >> key;
-        int result = search(key);
+        int result = search(key, colisionsSearch2, totalSearch2);
     } while (key != 0);
     return;
 }
@@ -148,7 +159,7 @@ int main(){
   //instrucciones();
       c1 = 0.5;
       c2 = 0.5;
-      colisionsSearch = colisionsInsert = totalInsert = totalSearch = hit = miss = ocupacion = 0;
+      colisionsSearch1 = colisionsSearch2 = colisionsInsert = totalInsert = totalSearch1 = totalSearch2 = ocupacion = 0;
       ejecucion();
       stats();
 }
