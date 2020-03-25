@@ -57,7 +57,7 @@ void print(){
 	*/
     cout << "Ratio de ocupación: " << ocupacion << endl;
 
-    cout << "Media probes teórica: " << 0.5 * (1 + 1/(1-ocupacion))  << endl;
+    cout << "Media probes teórica: " << -(1/ocupation)*log(1-ocupation)  << endl;
     cout << "Media probes empírica insertados: " << (colisionsSearch1)/float(totalSearch1) << endl;
     cout << "Media probes empírica no insertados: " << (colisionsSearch2)/float(totalSearch2) << endl;
 
