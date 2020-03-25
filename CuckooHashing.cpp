@@ -184,6 +184,7 @@ int main(){
 	int key;
 	cin >> key;
 	while(key != 0){ //INSERT
+		totalInsert++;
 		int result = insert1(key, it);
 		if(result == 2) { //Hashtable already full
 			break;
@@ -193,12 +194,14 @@ int main(){
 
 	cin >> key;
 	while(key != 0){ //SEARCH 1
+		totalSearch1++;
 		bool result = search(key, 1);
 		cin >> key;
 	}
 
 	cin >> key;
 	while(key != 0){ //SEARCH 2
+		totalSearch2++;
 		bool result = search(key, 2);
 		cin >> key;
 	}
