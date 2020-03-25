@@ -1,12 +1,13 @@
 #include<iostream>
 #include <vector>
 #include<map>
+#include<cmath>
 using namespace std;
 
 
   
   int cinsert = 0;
-  int csearch1= 0, csearch2 = 0;
+  double csearch1= 0, csearch2 = 0;
   int tinsert= 0;
   int tsearch1= 0, tsearch2= 0; 
   
@@ -40,7 +41,10 @@ void search1(vector<map<int,bool> > &Tabla, int paraula){
   
   int key = hash(paraula,midav);
   
-  if(not Tabla[key].empty()) ++csearch1;
+  if(not Tabla[key].empty())  csearch1 += log2((double)Tabla[key].size());
+
+  
+
   //si la tabla esta llena tarda log midamap colisiones en encontrarlo
   
   
@@ -52,8 +56,7 @@ void search2(vector<map<int,bool> > &Tabla, int paraula){
   
   int key = hash(paraula,midav);
   
- if(not Tabla[key].empty()) ++csearch2;
-  // si la tabla esta llena tarda log midamap colisiones en encontrarlo
+ if(not Tabla[key].empty()) csearch2 += log2((double)Tabla[key].size());
   
   
 }
@@ -108,12 +111,12 @@ int main(){
   cout << "Nombre: ExactFit"<< endl;
   cout << "Colisions Insert:" << cinsert << endl;
   cout << "Colisions Search:" << csearch1+csearch2 << endl;
-  cout << "Colisions Totals:" << cinsert+csearch1+csearch2 << endl;
+  cout << "Colisions Totals:" << (double)cinsert+csearch1+csearch2 << endl;
   cout << "Total Insert:" << tinsert << endl;
   cout << "Total Comandes:" << tinsert+tsearch1+tsearch2  << endl;
   cout << "Ratio de ocupacion contenedores:" << rocupacion << endl;
-  cout << "Total busqueda 1:" << tsearch1 << endl;
-  cout << "Total busqueda 2:" << tsearch2 << endl;
+  cout << "Total busqueda 1:" << csearch1/(double)tsearch1 << endl;
+  cout << "Total busqueda 2:" << csearch2/(double)tsearch2 << endl;
   
  
   
