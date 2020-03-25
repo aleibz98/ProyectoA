@@ -6,8 +6,8 @@ for i in range (10,110,10):
     input = open(intest,'rb')
     stdout = input.read()
     input.close()
-    outproc = "outputs/QuadraticProbing" + str(i) + "%.txt"
-    cmd = ["./QuadraticProbing.x"]
+    outproc = "outputs/LinearProbing" + str(i) + "%.txt"
+    cmd = ["./LinearProbing.x"]
     proc = subprocess.Popen(cmd, stdout=PIPE, stdin=PIPE)
     stdout, stderr = proc.communicate(stdout)
     output = open(outproc,'wb+')
