@@ -87,7 +87,7 @@ bool search(int key, int round){
 		else miss_search2++;
 		j++;
 		dhval = (valuef1+valuef2*j);
-		cout << "bucle; " << j << "val f1: " << valuef1 << " val f2: " << valuef2 << endl;
+		//cout << "bucle; " << j << "val f1: " << valuef1 << " val f2: " << valuef2 << endl;
 	}
 	//Found an empty position
 	if(round == 1) hit_search1++;
@@ -164,7 +164,7 @@ int main(){
 	colisionsInsert = miss_insert+hit_insert;
 	colisionsSearch1 = miss_search1+hit_search1;
 	colisionsSearch2 = miss_search2+hit_search2;
-	ocupacion = occuped_space/size;
+	ocupacion = (double)(occuped_space/size);
 
 	print(); //PRINT
 }
