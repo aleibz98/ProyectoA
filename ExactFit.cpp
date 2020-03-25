@@ -4,9 +4,13 @@
 using namespace std;
 
 
-
-int miss = 0;
-int hit = 0;
+  
+  int cinsert = 0;
+  int csearch1= 0, csearch2 = 0;
+  int tinsert= 0;
+  int tsearch1= 0, tsearch2= 0; 
+  
+  
 
 
 
@@ -24,16 +28,26 @@ void insert(vector<map<int,bool> > &Tabla, int i){
     
     int key = hash(i,midav);
     
-    if(Tabla[key].empty()) ++hit;
-    else ++miss;
-    
     Tabla[key].insert ( pair<int,bool>(i,true));
 
 }
   
   
 
-void search(vector<map<int,bool> > &Tabla, int paraula){
+void search1(vector<map<int,bool> > &Tabla, int paraula){
+  
+  int midav = Tabla.size();
+  
+  int key = hash(paraula,midav);
+  
+  if(not Tabla[key].empty()) 
+    ++csearch1;
+    
+  }
+  
+}
+
+void search2(vector<map<int,bool> > &Tabla, int paraula){
   
   int midav = Tabla.size();
   
@@ -69,27 +83,46 @@ int main(){
   while(key != 0){
     insert(Tabla,key);
     cin >> key;
+    ++tinsert;
     
   }
   
   cin >> key;
-  
+  ++tsearch1;
   while(key != 0){
-    search(Tabla,key);
+    search1(Tabla,key);
     cin >> key;
+    ++tsearch1;
     
   }
   
-    cin >> key;
-  
+  cin >> key;
+  ++tsearch2;
   while(key != 0){
-    search(Tabla,key);
+    search2(Tabla,key);
     cin >> key;
+    ++tsearch2;
+  }
+  
+  int tocupacion = 0;
+  for(int i = 0; i < Tmida; ++i){
+    
+    if(not Tabla[i].empty())++tocupacion;
     
   }
   
+  double rocupacion = (double) tocupacion / (double)Tmida;
   
-  cout << "miss: " << miss << endl;
-  cout << "hit: " << hit << endl;
+  cout << "Nombre: ExactFit"<< endl;
+  cout << "Colisions Insert:" << cinsert << endl;
+  cout << "Colisions Search:" << csearch1+csearch2 << endl;
+  cout << "Colisions Totals:" << cinsert+csearch1+csearch2 << endl;
+  cout << "Total Insert:" << tinsert << endl;
+  cout << "Total Comandes:" << tinsert+tsearch1+tsearch2  << endl;
+  cout << "Ratio de ocupacion contenedores:" << rocupacion << endl;
+  cout << "Total busqueda 1:" << tsearch1 << endl;
+  cout << "Total busqueda 2:" << tsearch2 << endl;
+  
+ 
   
 }
