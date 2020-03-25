@@ -15,7 +15,7 @@ using namespace std;
 
 
 
-int hash (int i,int mida){
+int hash1 (int i,int mida){
   
   return i%mida;
   
@@ -27,7 +27,7 @@ void insert(vector<map<int,bool> > &Tabla, int i){
   
     int midav = Tabla.size();
     
-    int key = hash(i,midav);
+    int key = hash1(i,midav);
     
     Tabla[key].insert ( pair<int,bool>(i,true));
 
@@ -39,7 +39,7 @@ void search1(vector<map<int,bool> > &Tabla, int paraula){
   
   int midav = Tabla.size();
   
-  int key = hash(paraula,midav);
+  int key = hash1(paraula,midav);
   
   if(not Tabla[key].empty())  csearch1 += log2((double)Tabla[key].size());
 
@@ -54,7 +54,7 @@ void search2(vector<map<int,bool> > &Tabla, int paraula){
   
   int midav = Tabla.size();
   
-  int key = hash(paraula,midav);
+  int key = hash1(paraula,midav);
   
  if(not Tabla[key].empty()) csearch2 += log2((double)Tabla[key].size());
   
