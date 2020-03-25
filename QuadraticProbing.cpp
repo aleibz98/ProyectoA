@@ -91,7 +91,7 @@ int search(int key, int &colisionsSearch, int &totalSearch){
 
 //FUNCIÓN DE INSTRUCCIONES - Muestra por la salida estándar las Instrucciones para el correcto uso del programa.
 void instrucciones() {
-    cout << "GUÍA PARA EL USO DE LINEAR PROBING" << endl;
+    cout << "GUÍA PARA EL USO DE QUADRATIC PROBING" << endl;
     cout << "En primer lugar introduzca el tamaño de la tabla que desea crear" << endl;
     cout << "A continuacion las claves que se quieren insertar finalizando con un '0'" << endl;
     cout << "Finalmente las claves que se desea buscar en la tabla, finalizando con un '0'" << endl;
@@ -99,7 +99,8 @@ void instrucciones() {
 }
 
 void stats() {
-    cout << "Nombre: Quadratic Probing" << endl;
+    cout << "Nombre: QuadraticProbing" << endl;
+    /*
     cout << "c1: " << c1 << endl;
     cout << "c2: " << c2 << endl;
     cout << "Colisions Insert: " << colisionsInsert << endl;
@@ -109,7 +110,7 @@ void stats() {
     cout << "Total Inserts: " << totalInsert << endl;
     cout << "Total Searches: " << totalSearch1 + totalSearch2 << endl;
     cout << "Total comandes: " << totalInsert + totalSearch1 + totalSearch2 << endl;
-
+    */
     cout << "Ratio de ocupación: " << ocupacion << endl;
 
     cout << "Media probes teórica: " << 1 - log(1-ocupacion) - ocupacion/2 << endl;

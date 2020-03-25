@@ -157,7 +157,7 @@ int main(){
   cout << "Hits parcials: " << hit_parcial << endl;
   */
 
-  cout << "Nombre: Bloom Filter" << endl;
+  cout << "Nombre: BloomFilter" << endl;
   cout << "Nombre de funcions de Hash: " << num_hashes << endl;
 
   cout << "Colisions de les funcions de hash: " << colisions << endl;

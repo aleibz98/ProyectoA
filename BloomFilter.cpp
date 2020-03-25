@@ -1,6 +1,7 @@
 #include<iostream>
 #include <vector>
 #include <cmath>
+#include <algorithm>
 using namespace std;
 
 
@@ -15,29 +16,16 @@ int miss = 0;
 //numero de colisions entre les funcions de hash
 int colisions = 0;
 
+int num_hashes;
+
+int primers[] = {5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97};
+
 int total_inserts = 0;
 
-
-int hash1 (int i,int mida){
-  
-  /*Escribir aqui nueva funcion de hash*/
-  
-  
+int singleHash(int key, int n){
+    return key%primers[n];
 }
 
-int hash2 (int i,int mida){
-  
-  /*Escribir aqui nueva funcion de hash*/
-  
-  
-}
-
-int hash3 (int i,int mida){
-  
-  /*Escribir aqui nueva funcion de hash*/
-  
-  
-}
 
 /*formula aproximada de la probabilitat de que hi hagi un fals positiu en una cerca*/
 double prob_fals_positiu(int mida){
@@ -48,10 +36,14 @@ double prob_fals_positiu(int mida){
   
 }
 
-bool hi_ha_iguals(int key1, int key2, int key3){
-  
-  return (key1 == key2 or key2 == key3 or key3 == key1);
-  
+vector<int> hashKey(int key, int n){
+    vector <int> hashes(n,0);
+    for(int i = 0; i < n; ++i){
+        int hash_i = singleHash(key, i);
+        if(binary_search(hashes.begin(),hashes.end(), hash_i)) colisions++;
+        hashes[i] = hash_i;
+    }
+    return hashes;
 }
 
 
@@ -62,29 +54,17 @@ void insert(vector<bool>&Tabla, int i){
   
     int midav = Tabla.size();
     
-    int key1 = hash1(i,midav);
-    int key2 = hash2(i,midav);
-    int key3 = hash3(i,midav);
-    
-    if(hi_ha_iguals(key1,key2,key3)) ++colisions;
-    
-    int comp = 0;
-    if(Tabla[key1])++comp;
-    else Tabla[key1] = true;
-    
-    if(Tabla[key2])++comp;
-    else Tabla[key2] = true;
-    
-    if(Tabla[key3])++comp;
-    else Tabla[key3] = true;
-    
-    if(comp == 3) ++miss;
-    else if(comp == 0) ++hit;
-    else ++hit_parcial;
-    
-    
-    
+    vector<int> hashes = hashKey(i, num_hashes);
 
+    int comp = 0;
+    for(int i = 0; i < num_hashes; ++i){
+        if (Tabla[hashes[i]]) comp++;
+        Tabla[hashes[i]] = true;
+    }
+
+    if (comp == num_hashes) miss++;
+    else if(comp == 0) hit++;
+    else hit_parcial++;
 }
   
   
@@ -93,20 +73,20 @@ void search(vector<bool>&Tabla, int paraula){
   
   int midav = Tabla.size();
   
-    int key1 = hash1(paraula, midav);
-    int key2 = hash2(paraula, midav);
-    int key3 = hash3(paraula, midav);
-  
-  
-  if(not Tabla[key1] or not Tabla[key2] or not Tabla[key3]) cout << "NO es troba a la taula" << endl;
-  
-  else cout << "El element probablement es troba a la taula" << endl;
-    
-  
-  
+  vector<int> hashes = hashKey(paraula, num_hashes);
+
+  bool a = true;
+  for(int i = 0; i < num_hashes; ++i){
+      if(not Tabla[hashes[i]]) {
+          a = false;
+          break;
+      }
+  }
+
+  //cout << ((not a) ? "No es troba a la taula" : "Si es troba a la taula") << endl;
+    if (not a) cout << "no esta a la taula" << endl;
+    else cout << "està a la taula" << endl;
 }
-
-
 
 
 int main(){  
@@ -115,34 +95,28 @@ int main(){
   cin >> Tmida;
   
   vector<bool> Tabla(Tmida);
-  
-  
-  
+
+  num_hashes = 1;
+
   int key;
   cin >> key;
   
   while(key != 0){
     insert(Tabla,key);
     cin >> key;
-    
   }
   
-  
-  cin >> key;
-  
-  while(key != 0){
-    search(Tabla,key);
-    cin >> key;
-    
-  }
-  
-    cin >> key;
-  
-  while(key != 0){
-    search(Tabla,key);
-    cin >> key;
-    
-  }
+  do{
+      cin >> key;
+      search(Tabla,key);
+  } while(key != 0);
+
+  cout << "-----------------------------------------------" << endl;
+
+  do {
+      cin >> key;
+      search(Tabla,key);
+  } while(key != 0);
   
   
   cout << "Miss: " << miss << endl;
@@ -150,7 +124,6 @@ int main(){
   cout << "Hits parcials: " << hit_parcial << endl;
   cout << "Colisions de les funcions de hash: " << colisions << endl;
   cout << "Probabilitat aproximada de un fals positiu: " << prob_fals_positiu(Tmida) << endl;
-  
   
 }
   

@@ -97,7 +97,8 @@ void instrucciones(){
 }
 
 void stats() {
-    cout << "Nombre: Linear Probing" << endl;
+    cout << "Nombre: LinearProbing" << endl;
+    /*
     cout << "Colisions Insert: " << colisionsInsert << endl;
     cout << "Colisions Search: " << colisionsSearch1 + colisionsSearch2 << endl;
     cout << "Colisions Totals: " <<  colisionsInsert + colisionsSearch1 + colisionsSearch2 << endl;
@@ -105,8 +106,8 @@ void stats() {
     cout << "Total Insert: " << totalInsert << endl;
     cout << "Total Search: " << totalSearch1 + totalSearch2 << endl;
     cout << "Total comandes: " <<  totalInsert + totalSearch1 + totalSearch2 << endl;
-
-    cout << "Ratio de ocupacion: " << ocupacion << endl;
+    */
+    cout << "Ratio de ocupación: " << ocupacion << endl;
 
     cout << "Media probes teórica: " << 0.5 * (1 + 1/(1-ocupacion))  << endl;
     cout << "Media probes empírica insertados: " << (colisionsSearch1)/float(totalSearch1) << endl;

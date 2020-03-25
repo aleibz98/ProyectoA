@@ -1,4 +1,4 @@
-Nombre: Bloom Filter
+Nombre: BloomFilter
 Nombre de funcions de Hash: 8
 Colisions de les funcions de hash: 38
 Probabilitat aproximada de un fals positiu: 0.164616
