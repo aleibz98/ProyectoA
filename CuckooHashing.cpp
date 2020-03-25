@@ -17,6 +17,16 @@ int hit_search;
 int miss_search;
 int it;
 
+int colisionsInsert;
+int colisionsSearch1;
+int colisionsSearch2;
+
+int totalInsert;
+int totalSearch1;
+int totalSearch2;
+
+double ocupacion;
+
 int insert1(int key, int it);
 
 int myXOR(int x, int y){
@@ -41,21 +51,22 @@ void initHashTable(){
 
 //Function that prints the whole hash table
 void print(){
-	cout << "::::::::::::::::::::::::::::::" << endl;
-	cout << " HASH TABLE 1:" << '\t' << '\t' << "HASH TABLE 2:"<< endl;
-	for(int k = 0; k<size; k++){
-		cout << " [ " << k << " ] : " << hashTable1[k] << '\t' << '\t' << "[ " << k << " ] : " << hashTable2[k] << endl;
-	}
+	cout << "Nombre: CuckooHashing" << endl;
+    cout << "Colisions Insert: " << colisionsInsert << endl;
+    cout << "Colisions Search: " << colisionsSearch1 + colisionsSearch2 << endl;
+    cout << "Colisions Totals: " <<  colisionsInsert + colisionsSearch1 + colisionsSearch2 << endl;
 
-	cout << "::::::::::::::::::::::::::::::" << endl;
-	//HITS & MISSES
-	cout << "[INSERT]= HITS: " << hit_insert << " MISSES: " << miss_insert << endl;
-	cout << "[SEARCH]= HITS: " << hit_search << " MISSES: " << miss_search << endl;
-	cout << "[TOTAL]= HITS: " << hit_insert+hit_search << " MISSES: " << miss_insert+miss_search << endl;
+    cout << "Total Insert: " << totalInsert << endl;
+    cout << "Total Search: " << totalSearch1 + totalSearch2 << endl;
+    cout << "Total comandes: " <<  totalInsert + totalSearch1 + totalSearch2 << endl;
 
-	//OCCUPED SPACE
-	cout << "[OCCUPED_SPACE (HashTable1)]= " << occuped_space1 << "      [OCCUPED_SPACE (HashTable2)]= " << occuped_space2 << endl;
-	cout << "[OCCUPED TOTAL]= " << occuped_space1+occuped_space2 << endl;
+    cout << "Ratio de ocupacion: " << ocupacion << endl;
+
+    cout << "Media probes teórica: " << 0.5 * (1 + 1/(1-ocupacion))  << endl;
+    cout << "Media probes empírica insertados: " << (colisionsSearch1)/float(totalSearch1) << endl;
+    cout << "Media probes empírica no insertados: " << (colisionsSearch2)/float(totalSearch2) << endl;
+
+    return;
 }
 
 void printBitVec(vector<char> v){
@@ -76,47 +87,30 @@ vector<char> getBit(int n){
 
 //First Hash function
 int hash_f1(int key){ // Hash function 1
-	return key;
+	return key%503;
 }
 
-//First Hash function
+//Second Hash function
 int hash_f2(int key){ // Hash function 1
-	return key+1;
+	return key%509;
 }
 
-//Hashing Function Jenkins one at a time
-int joaat(int key){
-	int i=0;
-	unsigned char pos = 0;
-	vector<char> bitKey = getBit(key);
-	printBitVec(bitKey);
-	while(i != size){
-		cout << "[" << i << "]" << " pos += bitKey[i] pos = " << pos << " bitKey[i] = " << bitKey[i] << endl;
-		pos += bitKey[i];
-		pos += pos * pow(2.0, 10.0);
-		pos = myXOR(pos, pos / pow(2,6));
-		i++;
-	}
-	pos += pos * pow(2,3);
-	pos = myXOR(pos, pos / pow(2,11));
-	pos += pos * pow(2,15);
-
-	return (unsigned int)pos;
-}
-
-//Function that given a key search if it is or not in the hash table
+//Function that given a key search if it is or not in the hash tables
 //return (1) CORRECT     (2) FULL     (3) CAN'T J>SIZE
-bool search(int key){
+bool search(int key, int round){
 	int j = 0;
 	int valuef1 = hash_f1(key)%size; // We calculate position given by 1st Hash Function
 	int valuef2 = hash_f2(key)%size; // We calculate position given by 2nd Hash Function
-	//cout << "searching key: " << key << " v1: " << valuef1 << " v2: " << valuef2 << endl; 
 	if(hashTable1[valuef1] == key | hashTable2[valuef2] == key){
-		hit_search++;
+		if (round == 1) colisionsSearch1++;
+		else colisionsSearch2++;
+
 		return true;
 	}
 	else{
-		miss_search++;
+		if(round == 1) colisionsSearch1++;
+		else colisionsSearch2++;
+
 		return false;
 	}
 }
@@ -124,23 +118,22 @@ bool search(int key){
 //Function that inserts a key into the hash table using CuckooHashing
 //return (1) CORRECT     (2) FULL     (3) CAN'T J>SIZE
 int insert2(int key, int it){
-	//cout << "entro en insert2 con key: " << key << " it: " << it << endl;
 	if(it == (2*size)) return 3; //Can't insert key in either HashTable
 	if(occuped_space2 != size){
 		int valuef2 = hash_f2(key)%size; // We calculate position given by 1st Hash Function
 		if(hashTable2[valuef2] != -1){ // If hashTable1 pos occuped
 			if(hashTable2[valuef2] == key){	//if we find the same key we wanted to insert
-				hit_insert++;
+				colisionsInsert++;
 				return 1;	//Key ya colocada
 			}
-			miss_insert++;
+			colisionsInsert++;
 			int oldkey = hashTable2[valuef2]; // Save old key in that pos
 			hashTable2[valuef2] = key; //Put new key in place
 			it++; //we increase iterator to break infinite loops
 			int x = insert1(oldkey, it); //We then try to insert oldkey in HashTable2
 			return x;
 		}
-		hit_insert++; 
+		colisionsInsert++;
 		occuped_space2++;
 		//cout << "inserto key: " << key << " en tabla 2 pos: " << valuef2 << endl;
 		hashTable2[valuef2] = key;
@@ -158,17 +151,17 @@ int insert1(int key, int it){
 		int valuef1 = hash_f1(key)%size; // We calculate position given by 1st Hash Function
 		if(hashTable1[valuef1] != -1){ // If hashTable1 pos occuped
 			if(hashTable1[valuef1] == key){	//if we find the same key we wanted to insert
-				hit_insert++;
+				colisionsInsert++;
 				return 1;	//Key ya colocada
 			}
-			miss_insert++;
+			colisionsInsert++;
 			int oldkey = hashTable1[valuef1]; // Save old key in that pos
 			hashTable1[valuef1] = key; //Put new key in place
 			it++; //we increase iterator to break infinite loops
 			int x = insert2(oldkey, it); //We then try to insert oldkey in HashTable2
 			return x;
 		}
-		hit_insert++; 
+		colisionsInsert++;
 		occuped_space1++;
 		hashTable1[valuef1] = key;
 		return 1;	//Key colocada en posicion LIBRE
@@ -177,47 +170,40 @@ int insert1(int key, int it){
 }
 
 int main(){
-	cout << "Insert Hash size: " << endl;
-	cin >> size;
-
-	vector<char> hsh = getBit(43);
-
 	occuped_space1 = 0;
 	occuped_space2 = 0;
-	miss_insert = 0;
-	hit_insert = 0;
-	miss_search = 0;
-	hit_search = 0;
+
+	totalInsert = 0;
+	totalSearch1 = 0;
+	totalSearch2 = 0;
 	it = 0;
 
-	int test;
-	cout << "insert per a fer joaat de: " << endl;
-	cin >> test;
-	cout << "el joaat de: " << test << " es; " << joaat(test) << endl;
 
 	initHashTable();
 
-	cout << "Insert Hash values to insert: (! End with a 0)" << endl;
 	int key;
 	cin >> key;
 	while(key != 0){ //INSERT
 		int result = insert1(key, it);
 		if(result == 2) { //Hashtable already full
-			cout << "Hash Table is full!" << endl;
 			break;
 		}
-		else if(result == 3) { // Can't insert that value
-			cout << "Can't insert " << key << " in the HashTables." << endl;
-		}
 		cin >> key;
 	}
-	cout << "Any keys you want to search in the HashTable: (! End with a 0)" << endl;
+
 	cin >> key;
-	while(key != 0){ //SEARCH
-		bool result = search(key);
-		if(!result) cout << "Key NOT found!" << endl;
-		else cout << "Key found!" << endl;
+	while(key != 0){ //SEARCH 1
+		bool result = search(key, 1);
 		cin >> key;
 	}
+
+	cin >> key;
+	while(key != 0){ //SEARCH 2
+		bool result = search(key, 2);
+		cin >> key;
+	}
+
+	ocupacion = (occuped_space1+occuped_space2)/(size*2);
+
 	print(); //PRINT
 }
