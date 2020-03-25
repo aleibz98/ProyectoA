@@ -47,15 +47,16 @@ void initHashTable(){
 //Function that prints the whole hash table
 void print(){
 	cout << "Nombre: DoubleHashing" << endl;
-    cout << "Colisions Insert: " << colisionsInsert << endl;
+    /*
+	cout << "Colisions Insert: " << colisionsInsert << endl;
     cout << "Colisions Search: " << colisionsSearch1 + colisionsSearch2 << endl;
     cout << "Colisions Totals: " <<  colisionsInsert + colisionsSearch1 + colisionsSearch2 << endl;
 
     cout << "Total Insert: " << totalInsert << endl;
     cout << "Total Search: " << totalSearch1 + totalSearch2 << endl;
     cout << "Total comandes: " <<  totalInsert + totalSearch1 + totalSearch2 << endl;
-
-    cout << "Ratio de ocupacion: " << ocupacion << endl;
+    */
+    cout << "Ratio de ocupación: " << ocupacion << endl;
 
     cout << "Media probes teórica: " << 0.5 * (1 + 1/(1-ocupacion))  << endl;
     cout << "Media probes empírica insertados: " << (colisionsSearch1)/float(totalSearch1) << endl;
@@ -164,7 +165,7 @@ int main(){
 	colisionsInsert = miss_insert+hit_insert;
 	colisionsSearch1 = miss_search1+hit_search1;
 	colisionsSearch2 = miss_search2+hit_search2;
-	ocupacion = (double)(occuped_space/size);
+	ocupacion = occuped_space/double(size);
 
 	print(); //PRINT
 }
