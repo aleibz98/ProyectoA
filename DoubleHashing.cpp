@@ -51,11 +51,10 @@ void print(){
 	cout << "Colisions Insert: " << colisionsInsert << endl;
     cout << "Colisions Search: " << colisionsSearch1 + colisionsSearch2 << endl;
     cout << "Colisions Totals: " <<  colisionsInsert + colisionsSearch1 + colisionsSearch2 << endl;
-
     cout << "Total Insert: " << totalInsert << endl;
     cout << "Total Search: " << totalSearch1 + totalSearch2 << endl;
     cout << "Total comandes: " <<  totalInsert + totalSearch1 + totalSearch2 << endl;
-    */
+	*/
     cout << "Ratio de ocupación: " << ocupacion << endl;
 
     cout << "Media probes teórica: " << 0.5 * (1 + 1/(1-ocupacion))  << endl;
@@ -67,7 +66,7 @@ void print(){
 
 //First Hash function
 int hash_f1(int key){ // Hash function 1
-	return key%503;
+	return key%size;
 }
 
 //First Hash function
@@ -169,3 +168,4 @@ int main(){
 
 	print(); //PRINT
 }
+
