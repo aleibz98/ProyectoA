@@ -1,130 +1,2080 @@
-Nombre.Nombre de funcions de Hash.Colisions de les funcions de hash.Probabilitat aproximada de un fals positiu.Probabilitat fals positiu empirica.Probabilitat aproximada de fals positiu a taula distribuida.Probabilitat de fals positiu empirica a taula distribuida.Colisions Insert.Colisions Search.Colisions Totals.Total Insert.Total Search.Total comandes.Ratio de ocupación.Media probes teórica.Media probes empírica insertados.Media probes empírica no insertados.
-BloomFilter.1.10.0,0951626.0,18.0,0952532.0,18.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.2.14.0,0328585.0,04.0,032918.0,04.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.3.18.0,0174106.0,04.0,0174555.0,04.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.4.22.0,0118133.0,08.0,0118518.0,08.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.5.26.0,00943092.0,08.0,00946737.0,08.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.6.30.0,0084362.0,06.0,00847326.0,06.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.7.34.0,00819371.0,04.0,00823345.0,04.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.8.40.0,00845546.0,06.0,00849977.0,06.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.9.44.0,00912698.0,08.0,00917781.0,08.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.1.24.0,63212.1,318.0,632489.1,318.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.2.28.0,747645.1,534.0,748113.1,534.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.3.34.0,857952.1,72.0,858356.1,72.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.4.38.0,928726.1,83.0,929003.1,83.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.5.58.0,966761.1,966.0,966925.1,966.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.6.84.0,985219.1,988.0,985307.1,988.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.7.96.0,993634.2,002.0,993679.2,002.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.8.88.0,997319.2,002.0,997341.2,002.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.9.94.0,99889.2,002.0,9989.2,002.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.1.6.0,181269.0,22.0,181433.0,22.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.2.10.0,108689.0,21.0,108866.0,21.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.3.14.0,0918488.0,17.0,0920503.0,17.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.4.18.0,0919536.0,26.0,0921942.0,26.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.5.22.0,100925.0,27.0,101219.0,27.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.6.28.0,11645.0,27.0,116812.0,27.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.7.32.0,137782.0,27.0,138225.0,27.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.8.38.0,164616.0,32.0,165151.0,32.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.9.44.0,196688.0,39.0,197321.0,39.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.1.8.0,259182.0,46.0,259404.0,46.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.2.12.0,203571.0,366667.0,203868.0,366667.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.3.18.0,208982.0,453333.0,209369.0,453333.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.4.20.0,238466.0,533333.0,23896.0,533333.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.5.38.0,28297.0,533333.0,283581.0,533333.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.6.42.0,338209.0,633333.0,338934.0,633333.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.7.48.0,400756.0,813333.0,40158.0,813333.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.8.38.0,467292.0,966667.0,468189.0,966667.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.9.44.0,534655.1,13333.0,535592.1,13333.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.1.10.0,32968.0,645.0,329948.0,645.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.2.14.0,303238.0,63.0,303635.0,63.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.3.20.0,341247.0,67.0,341778.0,67.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.4.24.0,40573.0,86.0,406387.0,86.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.5.42.0,483324.1,025.0,484082.1,025.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.6.52.0,565186.1,06.0,565999.1,06.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.7.60.0,644576.1,225.0,645394.1,225.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.8.44.0,71682.1,435.0,7176.1,435.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.9.48.0,779318.1,57.0,780028.1,57.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.1.12.0,393469.0,816.0,393773.0,816.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.2.16.0,399576.0,84.0,400042.0,84.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.3.24.0,468862.0,936.0,469468.0,936.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.4.26.0,558973.1,116.0,559674.1,116.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.5.42.0,651647.1,292.0,652376.1,292.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.6.52.0,736081.1,368.0,736775.1,368.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.7.58.0,806832.1,444.0,807448.1,444.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.8.52.0,862531.1,608.0,863046.1,608.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.9.56.0,904348.1,72.0,90476.1,72.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.1.18.0,451188.0,95.0,451518.0,95.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.2.22.0,488329.1.0,488835.1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.3.30.0,581558.1,26333.0,58218.1,26333.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.4.30.0,683588.1,42.0,684243.1,42.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.5.52.0,774648.1,53.0,775257.1,53.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.6.72.0,846857.1,51667.0,84737.1,51667.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.7.78.0,899637.1,60333.0,900039.1,60333.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.8.60.0,936027.1,72.0,936326.1,72.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.9.64.0,960077.1,84667.0,960289.1,84667.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.1.16.0,503415.1,00286.0,503763.1,00286.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.2.20.0,567616.1,12.0,568137.1,12.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.3.30.0,675781.1,32286.0,676376.1,32286.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.4.28.0,778061.1,50857.0,778625.1,50857.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.5.62.0,857861.1,66571.0,858328.1,66571.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.6.84.0,913333.1,65429.0,913683.1,65429.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.7.92.0,949024.1,73714.0,949268.1,73714.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.8.64.0,970797.1,76571.0,970958.1,76571.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.9.66.0,983594.1,90286.0,983697.1,90286.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.1.16.0,550671.1,125.0,551031.1,125.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.2.20.0,636969.1,275.0,637485.1,275.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.3.28.0,751789.1,445.0,752329.1,445.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.4.28.0,846652.1,635.0,847113.1,635.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.5.52.0,911715.1,7425.0,912056.1,7425.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.6.84.0,951626.1,725.0,951854.1,725.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.7.96.0,9744.1,795.0,974542.1,795.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.8.74.0,986785.1,8025.0,986869.1,8025.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.9.90.0,993301.1,96.0,993349.1,96.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.1.20.0,59343.1,23556.0,593797.1,23556.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.2.24.0,696726.1,42667.0,697223.1,42667.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.3.30.0,81163.1,60444.0,812103.1,60444.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.4.34.0,895103.1,74667.0,895466.1,74667.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.5.58.0,945675.1,86444.0,945914.1,86444.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.6.82.0,973205.1,86889.0,973348.1,86889.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.7.96.0,987216.1,91111.0,987296.1,91111.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.8.78.0,994043.1,90667.0,994086.1,90667.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-BloomFilter.9.84.0,997271.2,00222.0,997293.2,00222.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
-CuckooHashing.-1.-1.-1.-1.-1.-1.50.200.250.50.200.250.0,05.1,02632.1.1.
-CuckooHashing.-1.-1.-1.-1.-1.-1.806.2000.2806.500.2000.2500.0,5.1,5.1.1.
-CuckooHashing.-1.-1.-1.-1.-1.-1.106.400.506.100.400.500.0,1.1,05556.1.1.
-CuckooHashing.-1.-1.-1.-1.-1.-1.178.600.778.150.600.750.0,15.1,08824.1.1.
-CuckooHashing.-1.-1.-1.-1.-1.-1.245.800.1045.200.800.1000.0,2.1,125.1.1.
-CuckooHashing.-1.-1.-1.-1.-1.-1.319.1000.1319.250.1000.1250.0,25.1,16667.1.1.
-CuckooHashing.-1.-1.-1.-1.-1.-1.400.1200.1600.300.1200.1500.0,3.1,21429.1.1.
-CuckooHashing.-1.-1.-1.-1.-1.-1.486.1400.1886.350.1400.1750.0,35.1,26923.1.1.
-CuckooHashing.-1.-1.-1.-1.-1.-1.573.1600.2173.400.1600.2000.0,4.1,33333.1.1.
-CuckooHashing.-1.-1.-1.-1.-1.-1.670.1800.2470.450.1800.2250.0,45.1,40909.1.1.
-DoubleHashing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,1.1,05556.1.500.
-DoubleHashing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,196.1,12189.6,05.500.
-DoubleHashing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,28.1,19444.41,02.500.
-DoubleHashing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,36.1,28125.69,7125.500.
-DoubleHashing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,436.1,38652.67,994.500.
-DoubleHashing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,506.1,51215.90,125.500.
-DoubleHashing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,564.1,64679.108,82.500.
-DoubleHashing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,616.1,80208.124,033.500.
-DoubleHashing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,674.2,03374.133,668.500.
-LinearProbing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,0999999.1,05556.1,0099.0,0990099.
-LinearProbing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,999994.86481.10,2148.500.
-LinearProbing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,2.1,125.1,0796.0,228856.
-LinearProbing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,3.1,21429.1,17608.0,548173.
-LinearProbing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,4.1,33333.1,33167.0,805486.
-LinearProbing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,500001.1,5.1,4511.1,18962.
-LinearProbing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,599999.1,75.1,66889.1,81864.
-LinearProbing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,699998.2,16666.2,03709.3,50785.
-LinearProbing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,799997.2,99996.2,50936.6,80025.
-LinearProbing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,899996.5,49978.3,80466.20,3907.
-QuadraticProbing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,0976562.1,05393.1,0297.0,108911.
-QuadraticProbing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,976562.4,26514.3,94605.37,9121.
-QuadraticProbing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,195312.1,11964.1,10448.0,308458.
-QuadraticProbing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,292969.1,2002.1,16944.0,45515.
-QuadraticProbing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,390625.1,30001.1,2419.0,840399.
-QuadraticProbing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,488281.1,42584.1,32535.1,19361.
-QuadraticProbing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,585938.1,58877.1,60399.1,64393.
-QuadraticProbing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,683594.1,80893.1,83452.2,72325.
-QuadraticProbing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,78125.2,1292.2,02122.4,31586.
-QuadraticProbing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,878906.2,67174.2,4495.8,72031.
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 1
+
+Colisions de les funcions de hash: 10
+
+Probabilitat aproximada de un fals positiu: 0.0951626
+
+Probabilitat fals positiu empirica: 0.18
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.0952532
+
+Probabilitat de fals positiu empirica a taula distribuida: 0.18
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 2
+
+Colisions de les funcions de hash: 14
+
+Probabilitat aproximada de un fals positiu: 0.0328585
+
+Probabilitat fals positiu empirica: 0.04
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.032918
+
+Probabilitat de fals positiu empirica a taula distribuida: 0.04
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 3
+
+Colisions de les funcions de hash: 18
+
+Probabilitat aproximada de un fals positiu: 0.0174106
+
+Probabilitat fals positiu empirica: 0.04
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.0174555
+
+Probabilitat de fals positiu empirica a taula distribuida: 0.04
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 4
+
+Colisions de les funcions de hash: 22
+
+Probabilitat aproximada de un fals positiu: 0.0118133
+
+Probabilitat fals positiu empirica: 0.08
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.0118518
+
+Probabilitat de fals positiu empirica a taula distribuida: 0.08
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 5
+
+Colisions de les funcions de hash: 26
+
+Probabilitat aproximada de un fals positiu: 0.00943092
+
+Probabilitat fals positiu empirica: 0.08
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.00946737
+
+Probabilitat de fals positiu empirica a taula distribuida: 0.08
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 6
+
+Colisions de les funcions de hash: 30
+
+Probabilitat aproximada de un fals positiu: 0.0084362
+
+Probabilitat fals positiu empirica: 0.06
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.00847326
+
+Probabilitat de fals positiu empirica a taula distribuida: 0.06
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 7
+
+Colisions de les funcions de hash: 34
+
+Probabilitat aproximada de un fals positiu: 0.00819371
+
+Probabilitat fals positiu empirica: 0.04
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.00823345
+
+Probabilitat de fals positiu empirica a taula distribuida: 0.04
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 8
+
+Colisions de les funcions de hash: 40
+
+Probabilitat aproximada de un fals positiu: 0.00845546
+
+Probabilitat fals positiu empirica: 0.06
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.00849977
+
+Probabilitat de fals positiu empirica a taula distribuida: 0.06
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 9
+
+Colisions de les funcions de hash: 44
+
+Probabilitat aproximada de un fals positiu: 0.00912698
+
+Probabilitat fals positiu empirica: 0.08
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.00917781
+
+Probabilitat de fals positiu empirica a taula distribuida: 0.08
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 1
+
+Colisions de les funcions de hash: 24
+
+Probabilitat aproximada de un fals positiu: 0.63212
+
+Probabilitat fals positiu empirica: 1.318
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.632489
+
+Probabilitat de fals positiu empirica a taula distribuida: 1.318
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 2
+
+Colisions de les funcions de hash: 28
+
+Probabilitat aproximada de un fals positiu: 0.747645
+
+Probabilitat fals positiu empirica: 1.534
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.748113
+
+Probabilitat de fals positiu empirica a taula distribuida: 1.534
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 3
+
+Colisions de les funcions de hash: 34
+
+Probabilitat aproximada de un fals positiu: 0.857952
+
+Probabilitat fals positiu empirica: 1.72
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.858356
+
+Probabilitat de fals positiu empirica a taula distribuida: 1.72
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 4
+
+Colisions de les funcions de hash: 38
+
+Probabilitat aproximada de un fals positiu: 0.928726
+
+Probabilitat fals positiu empirica: 1.83
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.929003
+
+Probabilitat de fals positiu empirica a taula distribuida: 1.83
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 5
+
+Colisions de les funcions de hash: 58
+
+Probabilitat aproximada de un fals positiu: 0.966761
+
+Probabilitat fals positiu empirica: 1.966
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.966925
+
+Probabilitat de fals positiu empirica a taula distribuida: 1.966
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 6
+
+Colisions de les funcions de hash: 84
+
+Probabilitat aproximada de un fals positiu: 0.985219
+
+Probabilitat fals positiu empirica: 1.988
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.985307
+
+Probabilitat de fals positiu empirica a taula distribuida: 1.988
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 7
+
+Colisions de les funcions de hash: 96
+
+Probabilitat aproximada de un fals positiu: 0.993634
+
+Probabilitat fals positiu empirica: 2.002
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.993679
+
+Probabilitat de fals positiu empirica a taula distribuida: 2.002
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 8
+
+Colisions de les funcions de hash: 88
+
+Probabilitat aproximada de un fals positiu: 0.997319
+
+Probabilitat fals positiu empirica: 2.002
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.997341
+
+Probabilitat de fals positiu empirica a taula distribuida: 2.002
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 9
+
+Colisions de les funcions de hash: 94
+
+Probabilitat aproximada de un fals positiu: 0.99889
+
+Probabilitat fals positiu empirica: 2.002
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.9989
+
+Probabilitat de fals positiu empirica a taula distribuida: 2.002
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 1
+
+Colisions de les funcions de hash: 6
+
+Probabilitat aproximada de un fals positiu: 0.181269
+
+Probabilitat fals positiu empirica: 0.22
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.181433
+
+Probabilitat de fals positiu empirica a taula distribuida: 0.22
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 2
+
+Colisions de les funcions de hash: 10
+
+Probabilitat aproximada de un fals positiu: 0.108689
+
+Probabilitat fals positiu empirica: 0.21
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.108866
+
+Probabilitat de fals positiu empirica a taula distribuida: 0.21
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 3
+
+Colisions de les funcions de hash: 14
+
+Probabilitat aproximada de un fals positiu: 0.0918488
+
+Probabilitat fals positiu empirica: 0.17
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.0920503
+
+Probabilitat de fals positiu empirica a taula distribuida: 0.17
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 4
+
+Colisions de les funcions de hash: 18
+
+Probabilitat aproximada de un fals positiu: 0.0919536
+
+Probabilitat fals positiu empirica: 0.26
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.0921942
+
+Probabilitat de fals positiu empirica a taula distribuida: 0.26
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 5
+
+Colisions de les funcions de hash: 22
+
+Probabilitat aproximada de un fals positiu: 0.100925
+
+Probabilitat fals positiu empirica: 0.27
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.101219
+
+Probabilitat de fals positiu empirica a taula distribuida: 0.27
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 6
+
+Colisions de les funcions de hash: 28
+
+Probabilitat aproximada de un fals positiu: 0.11645
+
+Probabilitat fals positiu empirica: 0.27
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.116812
+
+Probabilitat de fals positiu empirica a taula distribuida: 0.27
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 7
+
+Colisions de les funcions de hash: 32
+
+Probabilitat aproximada de un fals positiu: 0.137782
+
+Probabilitat fals positiu empirica: 0.27
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.138225
+
+Probabilitat de fals positiu empirica a taula distribuida: 0.27
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 8
+
+Colisions de les funcions de hash: 38
+
+Probabilitat aproximada de un fals positiu: 0.164616
+
+Probabilitat fals positiu empirica: 0.32
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.165151
+
+Probabilitat de fals positiu empirica a taula distribuida: 0.32
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 9
+
+Colisions de les funcions de hash: 44
+
+Probabilitat aproximada de un fals positiu: 0.196688
+
+Probabilitat fals positiu empirica: 0.39
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.197321
+
+Probabilitat de fals positiu empirica a taula distribuida: 0.39
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 1
+
+Colisions de les funcions de hash: 8
+
+Probabilitat aproximada de un fals positiu: 0.259182
+
+Probabilitat fals positiu empirica: 0.46
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.259404
+
+Probabilitat de fals positiu empirica a taula distribuida: 0.46
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 2
+
+Colisions de les funcions de hash: 12
+
+Probabilitat aproximada de un fals positiu: 0.203571
+
+Probabilitat fals positiu empirica: 0.366667
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.203868
+
+Probabilitat de fals positiu empirica a taula distribuida: 0.366667
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 3
+
+Colisions de les funcions de hash: 18
+
+Probabilitat aproximada de un fals positiu: 0.208982
+
+Probabilitat fals positiu empirica: 0.453333
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.209369
+
+Probabilitat de fals positiu empirica a taula distribuida: 0.453333
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 4
+
+Colisions de les funcions de hash: 20
+
+Probabilitat aproximada de un fals positiu: 0.238466
+
+Probabilitat fals positiu empirica: 0.533333
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.23896
+
+Probabilitat de fals positiu empirica a taula distribuida: 0.533333
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 5
+
+Colisions de les funcions de hash: 38
+
+Probabilitat aproximada de un fals positiu: 0.28297
+
+Probabilitat fals positiu empirica: 0.533333
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.283581
+
+Probabilitat de fals positiu empirica a taula distribuida: 0.533333
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 6
+
+Colisions de les funcions de hash: 42
+
+Probabilitat aproximada de un fals positiu: 0.338209
+
+Probabilitat fals positiu empirica: 0.633333
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.338934
+
+Probabilitat de fals positiu empirica a taula distribuida: 0.633333
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 7
+
+Colisions de les funcions de hash: 48
+
+Probabilitat aproximada de un fals positiu: 0.400756
+
+Probabilitat fals positiu empirica: 0.813333
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.40158
+
+Probabilitat de fals positiu empirica a taula distribuida: 0.813333
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 8
+
+Colisions de les funcions de hash: 38
+
+Probabilitat aproximada de un fals positiu: 0.467292
+
+Probabilitat fals positiu empirica: 0.966667
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.468189
+
+Probabilitat de fals positiu empirica a taula distribuida: 0.966667
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 9
+
+Colisions de les funcions de hash: 44
+
+Probabilitat aproximada de un fals positiu: 0.534655
+
+Probabilitat fals positiu empirica: 1.13333
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.535592
+
+Probabilitat de fals positiu empirica a taula distribuida: 1.13333
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 1
+
+Colisions de les funcions de hash: 10
+
+Probabilitat aproximada de un fals positiu: 0.32968
+
+Probabilitat fals positiu empirica: 0.645
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.329948
+
+Probabilitat de fals positiu empirica a taula distribuida: 0.645
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 2
+
+Colisions de les funcions de hash: 14
+
+Probabilitat aproximada de un fals positiu: 0.303238
+
+Probabilitat fals positiu empirica: 0.63
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.303635
+
+Probabilitat de fals positiu empirica a taula distribuida: 0.63
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 3
+
+Colisions de les funcions de hash: 20
+
+Probabilitat aproximada de un fals positiu: 0.341247
+
+Probabilitat fals positiu empirica: 0.67
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.341778
+
+Probabilitat de fals positiu empirica a taula distribuida: 0.67
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 4
+
+Colisions de les funcions de hash: 24
+
+Probabilitat aproximada de un fals positiu: 0.40573
+
+Probabilitat fals positiu empirica: 0.86
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.406387
+
+Probabilitat de fals positiu empirica a taula distribuida: 0.86
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 5
+
+Colisions de les funcions de hash: 42
+
+Probabilitat aproximada de un fals positiu: 0.483324
+
+Probabilitat fals positiu empirica: 1.025
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.484082
+
+Probabilitat de fals positiu empirica a taula distribuida: 1.025
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 6
+
+Colisions de les funcions de hash: 52
+
+Probabilitat aproximada de un fals positiu: 0.565186
+
+Probabilitat fals positiu empirica: 1.06
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.565999
+
+Probabilitat de fals positiu empirica a taula distribuida: 1.06
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 7
+
+Colisions de les funcions de hash: 60
+
+Probabilitat aproximada de un fals positiu: 0.644576
+
+Probabilitat fals positiu empirica: 1.225
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.645394
+
+Probabilitat de fals positiu empirica a taula distribuida: 1.225
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 8
+
+Colisions de les funcions de hash: 44
+
+Probabilitat aproximada de un fals positiu: 0.71682
+
+Probabilitat fals positiu empirica: 1.435
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.7176
+
+Probabilitat de fals positiu empirica a taula distribuida: 1.435
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 9
+
+Colisions de les funcions de hash: 48
+
+Probabilitat aproximada de un fals positiu: 0.779318
+
+Probabilitat fals positiu empirica: 1.57
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.780028
+
+Probabilitat de fals positiu empirica a taula distribuida: 1.57
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 1
+
+Colisions de les funcions de hash: 12
+
+Probabilitat aproximada de un fals positiu: 0.393469
+
+Probabilitat fals positiu empirica: 0.816
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.393773
+
+Probabilitat de fals positiu empirica a taula distribuida: 0.816
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 2
+
+Colisions de les funcions de hash: 16
+
+Probabilitat aproximada de un fals positiu: 0.399576
+
+Probabilitat fals positiu empirica: 0.84
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.400042
+
+Probabilitat de fals positiu empirica a taula distribuida: 0.84
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 3
+
+Colisions de les funcions de hash: 24
+
+Probabilitat aproximada de un fals positiu: 0.468862
+
+Probabilitat fals positiu empirica: 0.936
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.469468
+
+Probabilitat de fals positiu empirica a taula distribuida: 0.936
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 4
+
+Colisions de les funcions de hash: 26
+
+Probabilitat aproximada de un fals positiu: 0.558973
+
+Probabilitat fals positiu empirica: 1.116
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.559674
+
+Probabilitat de fals positiu empirica a taula distribuida: 1.116
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 5
+
+Colisions de les funcions de hash: 42
+
+Probabilitat aproximada de un fals positiu: 0.651647
+
+Probabilitat fals positiu empirica: 1.292
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.652376
+
+Probabilitat de fals positiu empirica a taula distribuida: 1.292
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 6
+
+Colisions de les funcions de hash: 52
+
+Probabilitat aproximada de un fals positiu: 0.736081
+
+Probabilitat fals positiu empirica: 1.368
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.736775
+
+Probabilitat de fals positiu empirica a taula distribuida: 1.368
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 7
+
+Colisions de les funcions de hash: 58
+
+Probabilitat aproximada de un fals positiu: 0.806832
+
+Probabilitat fals positiu empirica: 1.444
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.807448
+
+Probabilitat de fals positiu empirica a taula distribuida: 1.444
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 8
+
+Colisions de les funcions de hash: 52
+
+Probabilitat aproximada de un fals positiu: 0.862531
+
+Probabilitat fals positiu empirica: 1.608
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.863046
+
+Probabilitat de fals positiu empirica a taula distribuida: 1.608
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 9
+
+Colisions de les funcions de hash: 56
+
+Probabilitat aproximada de un fals positiu: 0.904348
+
+Probabilitat fals positiu empirica: 1.72
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.90476
+
+Probabilitat de fals positiu empirica a taula distribuida: 1.72
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 1
+
+Colisions de les funcions de hash: 18
+
+Probabilitat aproximada de un fals positiu: 0.451188
+
+Probabilitat fals positiu empirica: 0.95
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.451518
+
+Probabilitat de fals positiu empirica a taula distribuida: 0.95
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 2
+
+Colisions de les funcions de hash: 22
+
+Probabilitat aproximada de un fals positiu: 0.488329
+
+Probabilitat fals positiu empirica: 1
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.488835
+
+Probabilitat de fals positiu empirica a taula distribuida: 1
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 3
+
+Colisions de les funcions de hash: 30
+
+Probabilitat aproximada de un fals positiu: 0.581558
+
+Probabilitat fals positiu empirica: 1.26333
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.58218
+
+Probabilitat de fals positiu empirica a taula distribuida: 1.26333
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 4
+
+Colisions de les funcions de hash: 30
+
+Probabilitat aproximada de un fals positiu: 0.683588
+
+Probabilitat fals positiu empirica: 1.42
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.684243
+
+Probabilitat de fals positiu empirica a taula distribuida: 1.42
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 5
+
+Colisions de les funcions de hash: 52
+
+Probabilitat aproximada de un fals positiu: 0.774648
+
+Probabilitat fals positiu empirica: 1.53
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.775257
+
+Probabilitat de fals positiu empirica a taula distribuida: 1.53
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 6
+
+Colisions de les funcions de hash: 72
+
+Probabilitat aproximada de un fals positiu: 0.846857
+
+Probabilitat fals positiu empirica: 1.51667
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.84737
+
+Probabilitat de fals positiu empirica a taula distribuida: 1.51667
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 7
+
+Colisions de les funcions de hash: 78
+
+Probabilitat aproximada de un fals positiu: 0.899637
+
+Probabilitat fals positiu empirica: 1.60333
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.900039
+
+Probabilitat de fals positiu empirica a taula distribuida: 1.60333
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 8
+
+Colisions de les funcions de hash: 60
+
+Probabilitat aproximada de un fals positiu: 0.936027
+
+Probabilitat fals positiu empirica: 1.72
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.936326
+
+Probabilitat de fals positiu empirica a taula distribuida: 1.72
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 9
+
+Colisions de les funcions de hash: 64
+
+Probabilitat aproximada de un fals positiu: 0.960077
+
+Probabilitat fals positiu empirica: 1.84667
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.960289
+
+Probabilitat de fals positiu empirica a taula distribuida: 1.84667
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 1
+
+Colisions de les funcions de hash: 16
+
+Probabilitat aproximada de un fals positiu: 0.503415
+
+Probabilitat fals positiu empirica: 1.00286
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.503763
+
+Probabilitat de fals positiu empirica a taula distribuida: 1.00286
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 2
+
+Colisions de les funcions de hash: 20
+
+Probabilitat aproximada de un fals positiu: 0.567616
+
+Probabilitat fals positiu empirica: 1.12
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.568137
+
+Probabilitat de fals positiu empirica a taula distribuida: 1.12
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 3
+
+Colisions de les funcions de hash: 30
+
+Probabilitat aproximada de un fals positiu: 0.675781
+
+Probabilitat fals positiu empirica: 1.32286
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.676376
+
+Probabilitat de fals positiu empirica a taula distribuida: 1.32286
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 4
+
+Colisions de les funcions de hash: 28
+
+Probabilitat aproximada de un fals positiu: 0.778061
+
+Probabilitat fals positiu empirica: 1.50857
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.778625
+
+Probabilitat de fals positiu empirica a taula distribuida: 1.50857
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 5
+
+Colisions de les funcions de hash: 62
+
+Probabilitat aproximada de un fals positiu: 0.857861
+
+Probabilitat fals positiu empirica: 1.66571
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.858328
+
+Probabilitat de fals positiu empirica a taula distribuida: 1.66571
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 6
+
+Colisions de les funcions de hash: 84
+
+Probabilitat aproximada de un fals positiu: 0.913333
+
+Probabilitat fals positiu empirica: 1.65429
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.913683
+
+Probabilitat de fals positiu empirica a taula distribuida: 1.65429
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 7
+
+Colisions de les funcions de hash: 92
+
+Probabilitat aproximada de un fals positiu: 0.949024
+
+Probabilitat fals positiu empirica: 1.73714
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.949268
+
+Probabilitat de fals positiu empirica a taula distribuida: 1.73714
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 8
+
+Colisions de les funcions de hash: 64
+
+Probabilitat aproximada de un fals positiu: 0.970797
+
+Probabilitat fals positiu empirica: 1.76571
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.970958
+
+Probabilitat de fals positiu empirica a taula distribuida: 1.76571
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 9
+
+Colisions de les funcions de hash: 66
+
+Probabilitat aproximada de un fals positiu: 0.983594
+
+Probabilitat fals positiu empirica: 1.90286
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.983697
+
+Probabilitat de fals positiu empirica a taula distribuida: 1.90286
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 1
+
+Colisions de les funcions de hash: 16
+
+Probabilitat aproximada de un fals positiu: 0.550671
+
+Probabilitat fals positiu empirica: 1.125
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.551031
+
+Probabilitat de fals positiu empirica a taula distribuida: 1.125
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 2
+
+Colisions de les funcions de hash: 20
+
+Probabilitat aproximada de un fals positiu: 0.636969
+
+Probabilitat fals positiu empirica: 1.275
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.637485
+
+Probabilitat de fals positiu empirica a taula distribuida: 1.275
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 3
+
+Colisions de les funcions de hash: 28
+
+Probabilitat aproximada de un fals positiu: 0.751789
+
+Probabilitat fals positiu empirica: 1.445
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.752329
+
+Probabilitat de fals positiu empirica a taula distribuida: 1.445
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 4
+
+Colisions de les funcions de hash: 28
+
+Probabilitat aproximada de un fals positiu: 0.846652
+
+Probabilitat fals positiu empirica: 1.635
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.847113
+
+Probabilitat de fals positiu empirica a taula distribuida: 1.635
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 5
+
+Colisions de les funcions de hash: 52
+
+Probabilitat aproximada de un fals positiu: 0.911715
+
+Probabilitat fals positiu empirica: 1.7425
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.912056
+
+Probabilitat de fals positiu empirica a taula distribuida: 1.7425
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 6
+
+Colisions de les funcions de hash: 84
+
+Probabilitat aproximada de un fals positiu: 0.951626
+
+Probabilitat fals positiu empirica: 1.725
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.951854
+
+Probabilitat de fals positiu empirica a taula distribuida: 1.725
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 7
+
+Colisions de les funcions de hash: 96
+
+Probabilitat aproximada de un fals positiu: 0.9744
+
+Probabilitat fals positiu empirica: 1.795
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.974542
+
+Probabilitat de fals positiu empirica a taula distribuida: 1.795
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 8
+
+Colisions de les funcions de hash: 74
+
+Probabilitat aproximada de un fals positiu: 0.986785
+
+Probabilitat fals positiu empirica: 1.8025
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.986869
+
+Probabilitat de fals positiu empirica a taula distribuida: 1.8025
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 9
+
+Colisions de les funcions de hash: 90
+
+Probabilitat aproximada de un fals positiu: 0.993301
+
+Probabilitat fals positiu empirica: 1.96
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.993349
+
+Probabilitat de fals positiu empirica a taula distribuida: 1.96
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 1
+
+Colisions de les funcions de hash: 20
+
+Probabilitat aproximada de un fals positiu: 0.59343
+
+Probabilitat fals positiu empirica: 1.23556
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.593797
+
+Probabilitat de fals positiu empirica a taula distribuida: 1.23556
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 2
+
+Colisions de les funcions de hash: 24
+
+Probabilitat aproximada de un fals positiu: 0.696726
+
+Probabilitat fals positiu empirica: 1.42667
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.697223
+
+Probabilitat de fals positiu empirica a taula distribuida: 1.42667
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 3
+
+Colisions de les funcions de hash: 30
+
+Probabilitat aproximada de un fals positiu: 0.81163
+
+Probabilitat fals positiu empirica: 1.60444
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.812103
+
+Probabilitat de fals positiu empirica a taula distribuida: 1.60444
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 4
+
+Colisions de les funcions de hash: 34
+
+Probabilitat aproximada de un fals positiu: 0.895103
+
+Probabilitat fals positiu empirica: 1.74667
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.895466
+
+Probabilitat de fals positiu empirica a taula distribuida: 1.74667
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 5
+
+Colisions de les funcions de hash: 58
+
+Probabilitat aproximada de un fals positiu: 0.945675
+
+Probabilitat fals positiu empirica: 1.86444
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.945914
+
+Probabilitat de fals positiu empirica a taula distribuida: 1.86444
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 6
+
+Colisions de les funcions de hash: 82
+
+Probabilitat aproximada de un fals positiu: 0.973205
+
+Probabilitat fals positiu empirica: 1.86889
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.973348
+
+Probabilitat de fals positiu empirica a taula distribuida: 1.86889
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 7
+
+Colisions de les funcions de hash: 96
+
+Probabilitat aproximada de un fals positiu: 0.987216
+
+Probabilitat fals positiu empirica: 1.91111
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.987296
+
+Probabilitat de fals positiu empirica a taula distribuida: 1.91111
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 8
+
+Colisions de les funcions de hash: 78
+
+Probabilitat aproximada de un fals positiu: 0.994043
+
+Probabilitat fals positiu empirica: 1.90667
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.994086
+
+Probabilitat de fals positiu empirica a taula distribuida: 1.90667
+
+Nombre: BloomFilter
+
+Nombre de funcions de Hash: 9
+
+Colisions de les funcions de hash: 84
+
+Probabilitat aproximada de un fals positiu: 0.997271
+
+Probabilitat fals positiu empirica: 2.00222
+
+Probabilitat aproximada de fals positiu a taula distribuida: 0.997293
+
+Probabilitat de fals positiu empirica a taula distribuida: 2.00222
+
+Nombre: CuckooHashing
+
+Colisions Insert: 50
+
+Colisions Search: 200
+
+Colisions Totals: 250
+
+Total Insert: 50
+
+Total Search: 200
+
+Total comandes: 250
+
+Ratio de ocupación: 0.05
+
+Media probes teórica: 1.02632
+
+Media probes empírica insertados: 1
+
+Media probes empírica no insertados: 1
+
+Nombre: CuckooHashing
+
+Colisions Insert: 760
+
+Colisions Search: 2000
+
+Colisions Totals: 2760
+
+Total Insert: 500
+
+Total Search: 2000
+
+Total comandes: 2500
+
+Ratio de ocupación: 0.5
+
+Media probes teórica: 1.5
+
+Media probes empírica insertados: 1
+
+Media probes empírica no insertados: 1
+
+Nombre: CuckooHashing
+
+Colisions Insert: 106
+
+Colisions Search: 400
+
+Colisions Totals: 506
+
+Total Insert: 100
+
+Total Search: 400
+
+Total comandes: 500
+
+Ratio de ocupación: 0.1
+
+Media probes teórica: 1.05556
+
+Media probes empírica insertados: 1
+
+Media probes empírica no insertados: 1
+
+Nombre: CuckooHashing
+
+Colisions Insert: 170
+
+Colisions Search: 600
+
+Colisions Totals: 770
+
+Total Insert: 150
+
+Total Search: 600
+
+Total comandes: 750
+
+Ratio de ocupación: 0.15
+
+Media probes teórica: 1.08824
+
+Media probes empírica insertados: 1
+
+Media probes empírica no insertados: 1
+
+Nombre: CuckooHashing
+
+Colisions Insert: 235
+
+Colisions Search: 800
+
+Colisions Totals: 1035
+
+Total Insert: 200
+
+Total Search: 800
+
+Total comandes: 1000
+
+Ratio de ocupación: 0.2
+
+Media probes teórica: 1.125
+
+Media probes empírica insertados: 1
+
+Media probes empírica no insertados: 1
+
+Nombre: CuckooHashing
+
+Colisions Insert: 309
+
+Colisions Search: 1000
+
+Colisions Totals: 1309
+
+Total Insert: 250
+
+Total Search: 1000
+
+Total comandes: 1250
+
+Ratio de ocupación: 0.25
+
+Media probes teórica: 1.16667
+
+Media probes empírica insertados: 1
+
+Media probes empírica no insertados: 1
+
+Nombre: CuckooHashing
+
+Colisions Insert: 380
+
+Colisions Search: 1200
+
+Colisions Totals: 1580
+
+Total Insert: 300
+
+Total Search: 1200
+
+Total comandes: 1500
+
+Ratio de ocupación: 0.3
+
+Media probes teórica: 1.21429
+
+Media probes empírica insertados: 1
+
+Media probes empírica no insertados: 1
+
+Nombre: CuckooHashing
+
+Colisions Insert: 474
+
+Colisions Search: 1400
+
+Colisions Totals: 1874
+
+Total Insert: 350
+
+Total Search: 1400
+
+Total comandes: 1750
+
+Ratio de ocupación: 0.35
+
+Media probes teórica: 1.26923
+
+Media probes empírica insertados: 1
+
+Media probes empírica no insertados: 1
+
+Nombre: CuckooHashing
+
+Colisions Insert: 559
+
+Colisions Search: 1600
+
+Colisions Totals: 2159
+
+Total Insert: 400
+
+Total Search: 1600
+
+Total comandes: 2000
+
+Ratio de ocupación: 0.4
+
+Media probes teórica: 1.33333
+
+Media probes empírica insertados: 1
+
+Media probes empírica no insertados: 1
+
+Nombre: CuckooHashing
+
+Colisions Insert: 650
+
+Colisions Search: 1800
+
+Colisions Totals: 2450
+
+Total Insert: 450
+
+Total Search: 1800
+
+Total comandes: 2250
+
+Ratio de ocupación: 0.45
+
+Media probes teórica: 1.40909
+
+Media probes empírica insertados: 1
+
+Media probes empírica no insertados: 1
+
+Nombre: DoubleHashing
+
+Ratio de ocupación: 0.098
+
+Media probes teórica: 1.05246
+
+Media probes empírica insertados: 20.96
+
+Media probes empírica no insertados: 15.99
+
+Nombre: DoubleHashing
+
+Ratio de ocupación: 0.19
+
+Media probes teórica: 1.10906
+
+Media probes empírica insertados: 28.52
+
+Media probes empírica no insertados: 38.515
+
+Nombre: DoubleHashing
+
+Ratio de ocupación: 0.276
+
+Media probes teórica: 1.17016
+
+Media probes empírica insertados: 36.0667
+
+Media probes empírica no insertados: 77.65
+
+Nombre: DoubleHashing
+
+Ratio de ocupación: 0.364
+
+Media probes teórica: 1.24329
+
+Media probes empírica insertados: 46.045
+
+Media probes empírica no insertados: 112.183
+
+Nombre: DoubleHashing
+
+Ratio de ocupación: 0.438
+
+Media probes teórica: 1.31565
+
+Media probes empírica insertados: 59.016
+
+Media probes empírica no insertados: 134.956
+
+Nombre: DoubleHashing
+
+Ratio de ocupación: 0.508
+
+Media probes teórica: 1.39621
+
+Media probes empírica insertados: 76.8533
+
+Media probes empírica no insertados: 166.737
+
+Nombre: DoubleHashing
+
+Ratio de ocupación: 0.582
+
+Media probes teórica: 1.49875
+
+Media probes empírica insertados: 86.6843
+
+Media probes empírica no insertados: 196.561
+
+Nombre: DoubleHashing
+
+Ratio de ocupación: 0.622
+
+Media probes teórica: 1.56409
+
+Media probes empírica insertados: 114.692
+
+Media probes empírica no insertados: 227.685
+
+Nombre: DoubleHashing
+
+Ratio de ocupación: 0.684
+
+Media probes teórica: 1.68423
+
+Media probes empírica insertados: 131.474
+
+Media probes empírica no insertados: 262.447
+
+Nombre: ExactFit
+
+Ratio de ocupación: 0.098
+
+Media prueba teórica insertados: 0.019802
+
+Media prueba teórica no insertados: 0
+
+Nombre: ExactFit
+
+Ratio de ocupación: 0.634
+
+Media prueba teórica insertados: 0.817646
+
+Media prueba teórica no insertados: 0.319004
+
+Nombre: ExactFit
+
+Ratio de ocupación: 0.188
+
+Media prueba teórica insertados: 0.119403
+
+Media prueba teórica no insertados: 0
+
+Nombre: ExactFit
+
+Ratio de ocupación: 0.256
+
+Media prueba teórica insertados: 0.328154
+
+Media prueba teórica no insertados: 0.0603652
+
+Nombre: ExactFit
+
+Ratio de ocupación: 0.32
+
+Media prueba teórica insertados: 0.430956
+
+Media prueba teórica no insertados: 0.0735905
+
+Nombre: ExactFit
+
+Ratio de ocupación: 0.394
+
+Media prueba teórica insertados: 0.459805
+
+Media prueba teórica no insertados: 0.0680534
+
+Nombre: ExactFit
+
+Ratio de ocupación: 0.462
+
+Media prueba teórica insertados: 0.490951
+
+Media prueba teórica no insertados: 0.114151
+
+Nombre: ExactFit
+
+Ratio de ocupación: 0.514
+
+Media prueba teórica insertados: 0.650321
+
+Media prueba teórica no insertados: 0.173016
+
+Nombre: ExactFit
+
+Ratio de ocupación: 0.558
+
+Media prueba teórica insertados: 0.686861
+
+Media prueba teórica no insertados: 0.204887
+
+Nombre: ExactFit
+
+Ratio de ocupación: 0.596
+
+Media prueba teórica insertados: 0.720404
+
+Media prueba teórica no insertados: 0.259044
+
+Nombre: LinearProbing
+
+Ratio de ocupación: 0.0999999
+
+Media probes teórica: 1.05556
+
+Media probes empírica insertados: 1.0099
+
+Media probes empírica no insertados: 0.0990099
+
+Nombre: LinearProbing
+
+Ratio de ocupación: 0.999994
+
+Media probes teórica: 86481
+
+Media probes empírica insertados: 10.2148
+
+Media probes empírica no insertados: 500
+
+Nombre: LinearProbing
+
+Ratio de ocupación: 0.2
+
+Media probes teórica: 1.125
+
+Media probes empírica insertados: 1.0796
+
+Media probes empírica no insertados: 0.228856
+
+Nombre: LinearProbing
+
+Ratio de ocupación: 0.3
+
+Media probes teórica: 1.21429
+
+Media probes empírica insertados: 1.17608
+
+Media probes empírica no insertados: 0.548173
+
+Nombre: LinearProbing
+
+Ratio de ocupación: 0.4
+
+Media probes teórica: 1.33333
+
+Media probes empírica insertados: 1.33167
+
+Media probes empírica no insertados: 0.805486
+
+Nombre: LinearProbing
+
+Ratio de ocupación: 0.500001
+
+Media probes teórica: 1.5
+
+Media probes empírica insertados: 1.4511
+
+Media probes empírica no insertados: 1.18962
+
+Nombre: LinearProbing
+
+Ratio de ocupación: 0.599999
+
+Media probes teórica: 1.75
+
+Media probes empírica insertados: 1.66889
+
+Media probes empírica no insertados: 1.81864
+
+Nombre: LinearProbing
+
+Ratio de ocupación: 0.699998
+
+Media probes teórica: 2.16666
+
+Media probes empírica insertados: 2.03709
+
+Media probes empírica no insertados: 3.50785
+
+Nombre: LinearProbing
+
+Ratio de ocupación: 0.799997
+
+Media probes teórica: 2.99996
+
+Media probes empírica insertados: 2.50936
+
+Media probes empírica no insertados: 6.80025
+
+Nombre: LinearProbing
+
+Ratio de ocupación: 0.899996
+
+Media probes teórica: 5.49978
+
+Media probes empírica insertados: 3.80466
+
+Media probes empírica no insertados: 20.3907
+
+Nombre: MovetoFront
+
+Ratio de ocupación contenedor: 0.098
+
+Media probes empírica insertados: 1.0099
+
+Media probes empírica no insertados: 0.990099
+
+Nombre: MovetoFront
+
+Ratio de ocupación contenedor: 0.634
+
+Media probes empírica insertados: 1.48352
+
+Media probes empírica no insertados: 1.36464
+
+Nombre: MovetoFront
+
+Ratio de ocupación contenedor: 0.188
+
+Media probes empírica insertados: 1.04975
+
+Media probes empírica no insertados: 0.995025
+
+Nombre: MovetoFront
+
+Ratio de ocupación contenedor: 0.256
+
+Media probes empírica insertados: 1.15282
+
+Media probes empírica no insertados: 1.0598
+
+Nombre: MovetoFront
+
+Ratio de ocupación contenedor: 0.32
+
+Media probes empírica insertados: 1.25436
+
+Media probes empírica no insertados: 1.08229
+
+Nombre: MovetoFront
+
+Ratio de ocupación contenedor: 0.394
+
+Media probes empírica insertados: 1.22954
+
+Media probes empírica no insertados: 1.07385
+
+Nombre: MovetoFront
+
+Ratio de ocupación contenedor: 0.462
+
+Media probes empírica insertados: 1.27621
+
+Media probes empírica no insertados: 1.12479
+
+Nombre: MovetoFront
+
+Ratio de ocupación contenedor: 0.514
+
+Media probes empírica insertados: 1.37803
+
+Media probes empírica no insertados: 1.19258
+
+Nombre: MovetoFront
+
+Ratio de ocupación contenedor: 0.558
+
+Media probes empírica insertados: 1.42197
+
+Media probes empírica no insertados: 1.22597
+
+Nombre: MovetoFront
+
+Ratio de ocupación contenedor: 0.596
+
+Media probes empírica insertados: 1.42619
+
+Media probes empírica no insertados: 1.28968
+
+Nombre: QuadraticProbing
+
+Ratio de ocupación: 0.0976562
+
+Media probes teórica: 1.05393
+
+Media probes empírica insertados: 1.0297
+
+Media probes empírica no insertados: 0.108911
+
+Nombre: QuadraticProbing
+
+Ratio de ocupación: 0.976562
+
+Media probes teórica: 4.26514
+
+Media probes empírica insertados: 3.94605
+
+Media probes empírica no insertados: 37.9121
+
+Nombre: QuadraticProbing
+
+Ratio de ocupación: 0.195312
+
+Media probes teórica: 1.11964
+
+Media probes empírica insertados: 1.10448
+
+Media probes empírica no insertados: 0.308458
+
+Nombre: QuadraticProbing
+
+Ratio de ocupación: 0.292969
+
+Media probes teórica: 1.2002
+
+Media probes empírica insertados: 1.16944
+
+Media probes empírica no insertados: 0.45515
+
+Nombre: QuadraticProbing
+
+Ratio de ocupación: 0.390625
+
+Media probes teórica: 1.30001
+
+Media probes empírica insertados: 1.2419
+
+Media probes empírica no insertados: 0.840399
+
+Nombre: QuadraticProbing
+
+Ratio de ocupación: 0.488281
+
+Media probes teórica: 1.42584
+
+Media probes empírica insertados: 1.32535
+
+Media probes empírica no insertados: 1.19361
+
+Nombre: QuadraticProbing
+
+Ratio de ocupación: 0.585938
+
+Media probes teórica: 1.58877
+
+Media probes empírica insertados: 1.60399
+
+Media probes empírica no insertados: 1.64393
+
+Nombre: QuadraticProbing
+
+Ratio de ocupación: 0.683594
+
+Media probes teórica: 1.80893
+
+Media probes empírica insertados: 1.83452
+
+Media probes empírica no insertados: 2.72325
+
+Nombre: QuadraticProbing
+
+Ratio de ocupación: 0.78125
+
+Media probes teórica: 2.1292
+
+Media probes empírica insertados: 2.02122
+
+Media probes empírica no insertados: 4.31586
+
+Nombre: QuadraticProbing
+
+Ratio de ocupación: 0.878906
+
+Media probes teórica: 2.67174
+
+Media probes empírica insertados: 2.4495
+
+Media probes empírica no insertados: 8.72031
+
+Nombre.Nombre de funcions de Hash.Colisions de les funcions de hash.Probabilitat aproximada de un fals positiu.Probabilitat fals positiu empirica.Probabilitat aproximada de fals positiu a taula distribuida.Probabilitat de fals positiu empirica a taula distribuida.Colisions Insert.Colisions Search.Colisions Totals.Total Insert.Total Search.Total comandes.Ratio de ocupación.Media probes teórica.Media probes empírica insertados.Media probes empírica no insertados.Media prueba teórica insertados.Media prueba teórica no insertados.Ratio de ocupación contenedor.
+BloomFilter.1.10.0,0951626.0,18.0,0952532.0,18.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.2.14.0,0328585.0,04.0,032918.0,04.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.3.18.0,0174106.0,04.0,0174555.0,04.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.4.22.0,0118133.0,08.0,0118518.0,08.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.5.26.0,00943092.0,08.0,00946737.0,08.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.6.30.0,0084362.0,06.0,00847326.0,06.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.7.34.0,00819371.0,04.0,00823345.0,04.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.8.40.0,00845546.0,06.0,00849977.0,06.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.9.44.0,00912698.0,08.0,00917781.0,08.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.1.24.0,63212.1,318.0,632489.1,318.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.2.28.0,747645.1,534.0,748113.1,534.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.3.34.0,857952.1,72.0,858356.1,72.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.4.38.0,928726.1,83.0,929003.1,83.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.5.58.0,966761.1,966.0,966925.1,966.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.6.84.0,985219.1,988.0,985307.1,988.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.7.96.0,993634.2,002.0,993679.2,002.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.8.88.0,997319.2,002.0,997341.2,002.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.9.94.0,99889.2,002.0,9989.2,002.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.1.6.0,181269.0,22.0,181433.0,22.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.2.10.0,108689.0,21.0,108866.0,21.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.3.14.0,0918488.0,17.0,0920503.0,17.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.4.18.0,0919536.0,26.0,0921942.0,26.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.5.22.0,100925.0,27.0,101219.0,27.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.6.28.0,11645.0,27.0,116812.0,27.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.7.32.0,137782.0,27.0,138225.0,27.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.8.38.0,164616.0,32.0,165151.0,32.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.9.44.0,196688.0,39.0,197321.0,39.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.1.8.0,259182.0,46.0,259404.0,46.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.2.12.0,203571.0,366667.0,203868.0,366667.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.3.18.0,208982.0,453333.0,209369.0,453333.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.4.20.0,238466.0,533333.0,23896.0,533333.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.5.38.0,28297.0,533333.0,283581.0,533333.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.6.42.0,338209.0,633333.0,338934.0,633333.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.7.48.0,400756.0,813333.0,40158.0,813333.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.8.38.0,467292.0,966667.0,468189.0,966667.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.9.44.0,534655.1,13333.0,535592.1,13333.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.1.10.0,32968.0,645.0,329948.0,645.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.2.14.0,303238.0,63.0,303635.0,63.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.3.20.0,341247.0,67.0,341778.0,67.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.4.24.0,40573.0,86.0,406387.0,86.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.5.42.0,483324.1,025.0,484082.1,025.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.6.52.0,565186.1,06.0,565999.1,06.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.7.60.0,644576.1,225.0,645394.1,225.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.8.44.0,71682.1,435.0,7176.1,435.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.9.48.0,779318.1,57.0,780028.1,57.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.1.12.0,393469.0,816.0,393773.0,816.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.2.16.0,399576.0,84.0,400042.0,84.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.3.24.0,468862.0,936.0,469468.0,936.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.4.26.0,558973.1,116.0,559674.1,116.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.5.42.0,651647.1,292.0,652376.1,292.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.6.52.0,736081.1,368.0,736775.1,368.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.7.58.0,806832.1,444.0,807448.1,444.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.8.52.0,862531.1,608.0,863046.1,608.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.9.56.0,904348.1,72.0,90476.1,72.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.1.18.0,451188.0,95.0,451518.0,95.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.2.22.0,488329.1.0,488835.1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.3.30.0,581558.1,26333.0,58218.1,26333.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.4.30.0,683588.1,42.0,684243.1,42.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.5.52.0,774648.1,53.0,775257.1,53.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.6.72.0,846857.1,51667.0,84737.1,51667.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.7.78.0,899637.1,60333.0,900039.1,60333.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.8.60.0,936027.1,72.0,936326.1,72.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.9.64.0,960077.1,84667.0,960289.1,84667.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.1.16.0,503415.1,00286.0,503763.1,00286.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.2.20.0,567616.1,12.0,568137.1,12.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.3.30.0,675781.1,32286.0,676376.1,32286.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.4.28.0,778061.1,50857.0,778625.1,50857.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.5.62.0,857861.1,66571.0,858328.1,66571.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.6.84.0,913333.1,65429.0,913683.1,65429.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.7.92.0,949024.1,73714.0,949268.1,73714.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.8.64.0,970797.1,76571.0,970958.1,76571.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.9.66.0,983594.1,90286.0,983697.1,90286.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.1.16.0,550671.1,125.0,551031.1,125.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.2.20.0,636969.1,275.0,637485.1,275.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.3.28.0,751789.1,445.0,752329.1,445.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.4.28.0,846652.1,635.0,847113.1,635.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.5.52.0,911715.1,7425.0,912056.1,7425.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.6.84.0,951626.1,725.0,951854.1,725.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.7.96.0,9744.1,795.0,974542.1,795.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.8.74.0,986785.1,8025.0,986869.1,8025.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.9.90.0,993301.1,96.0,993349.1,96.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.1.20.0,59343.1,23556.0,593797.1,23556.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.2.24.0,696726.1,42667.0,697223.1,42667.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.3.30.0,81163.1,60444.0,812103.1,60444.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.4.34.0,895103.1,74667.0,895466.1,74667.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.5.58.0,945675.1,86444.0,945914.1,86444.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.6.82.0,973205.1,86889.0,973348.1,86889.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.7.96.0,987216.1,91111.0,987296.1,91111.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.8.78.0,994043.1,90667.0,994086.1,90667.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+BloomFilter.9.84.0,997271.2,00222.0,997293.2,00222.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.
+CuckooHashing.-1.-1.-1.-1.-1.-1.50.200.250.50.200.250.0,05.1,02632.1.1.-1.-1.-1.
+CuckooHashing.-1.-1.-1.-1.-1.-1.760.2000.2760.500.2000.2500.0,5.1,5.1.1.-1.-1.-1.
+CuckooHashing.-1.-1.-1.-1.-1.-1.106.400.506.100.400.500.0,1.1,05556.1.1.-1.-1.-1.
+CuckooHashing.-1.-1.-1.-1.-1.-1.170.600.770.150.600.750.0,15.1,08824.1.1.-1.-1.-1.
+CuckooHashing.-1.-1.-1.-1.-1.-1.235.800.1035.200.800.1000.0,2.1,125.1.1.-1.-1.-1.
+CuckooHashing.-1.-1.-1.-1.-1.-1.309.1000.1309.250.1000.1250.0,25.1,16667.1.1.-1.-1.-1.
+CuckooHashing.-1.-1.-1.-1.-1.-1.380.1200.1580.300.1200.1500.0,3.1,21429.1.1.-1.-1.-1.
+CuckooHashing.-1.-1.-1.-1.-1.-1.474.1400.1874.350.1400.1750.0,35.1,26923.1.1.-1.-1.-1.
+CuckooHashing.-1.-1.-1.-1.-1.-1.559.1600.2159.400.1600.2000.0,4.1,33333.1.1.-1.-1.-1.
+CuckooHashing.-1.-1.-1.-1.-1.-1.650.1800.2450.450.1800.2250.0,45.1,40909.1.1.-1.-1.-1.
+DoubleHashing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,098.1,05246.20,96.15,99.-1.-1.-1.
+DoubleHashing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,19.1,10906.28,52.38,515.-1.-1.-1.
+DoubleHashing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,276.1,17016.36,0667.77,65.-1.-1.-1.
+DoubleHashing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,364.1,24329.46,045.112,183.-1.-1.-1.
+DoubleHashing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,438.1,31565.59,016.134,956.-1.-1.-1.
+DoubleHashing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,508.1,39621.76,8533.166,737.-1.-1.-1.
+DoubleHashing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,582.1,49875.86,6843.196,561.-1.-1.-1.
+DoubleHashing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,622.1,56409.114,692.227,685.-1.-1.-1.
+DoubleHashing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,684.1,68423.131,474.262,447.-1.-1.-1.
+ExactFit.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,098.-1.-1.-1.0,019802.0.-1.
+ExactFit.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,634.-1.-1.-1.0,817646.0,319004.-1.
+ExactFit.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,188.-1.-1.-1.0,119403.0.-1.
+ExactFit.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,256.-1.-1.-1.0,328154.0,0603652.-1.
+ExactFit.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,32.-1.-1.-1.0,430956.0,0735905.-1.
+ExactFit.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,394.-1.-1.-1.0,459805.0,0680534.-1.
+ExactFit.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,462.-1.-1.-1.0,490951.0,114151.-1.
+ExactFit.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,514.-1.-1.-1.0,650321.0,173016.-1.
+ExactFit.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,558.-1.-1.-1.0,686861.0,204887.-1.
+ExactFit.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,596.-1.-1.-1.0,720404.0,259044.-1.
+LinearProbing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,0999999.1,05556.1,0099.0,0990099.-1.-1.-1.
+LinearProbing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,999994.86481.10,2148.500.-1.-1.-1.
+LinearProbing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,2.1,125.1,0796.0,228856.-1.-1.-1.
+LinearProbing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,3.1,21429.1,17608.0,548173.-1.-1.-1.
+LinearProbing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,4.1,33333.1,33167.0,805486.-1.-1.-1.
+LinearProbing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,500001.1,5.1,4511.1,18962.-1.-1.-1.
+LinearProbing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,599999.1,75.1,66889.1,81864.-1.-1.-1.
+LinearProbing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,699998.2,16666.2,03709.3,50785.-1.-1.-1.
+LinearProbing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,799997.2,99996.2,50936.6,80025.-1.-1.-1.
+LinearProbing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,899996.5,49978.3,80466.20,3907.-1.-1.-1.
+MovetoFront.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.1,0099.0,990099.-1.-1.0,098.
+MovetoFront.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.1,48352.1,36464.-1.-1.0,634.
+MovetoFront.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.1,04975.0,995025.-1.-1.0,188.
+MovetoFront.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.1,15282.1,0598.-1.-1.0,256.
+MovetoFront.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.1,25436.1,08229.-1.-1.0,32.
+MovetoFront.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.1,22954.1,07385.-1.-1.0,394.
+MovetoFront.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.1,27621.1,12479.-1.-1.0,462.
+MovetoFront.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.1,37803.1,19258.-1.-1.0,514.
+MovetoFront.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.1,42197.1,22597.-1.-1.0,558.
+MovetoFront.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.1,42619.1,28968.-1.-1.0,596.
+QuadraticProbing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,0976562.1,05393.1,0297.0,108911.-1.-1.-1.
+QuadraticProbing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,976562.4,26514.3,94605.37,9121.-1.-1.-1.
+QuadraticProbing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,195312.1,11964.1,10448.0,308458.-1.-1.-1.
+QuadraticProbing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,292969.1,2002.1,16944.0,45515.-1.-1.-1.
+QuadraticProbing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,390625.1,30001.1,2419.0,840399.-1.-1.-1.
+QuadraticProbing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,488281.1,42584.1,32535.1,19361.-1.-1.-1.
+QuadraticProbing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,585938.1,58877.1,60399.1,64393.-1.-1.-1.
+QuadraticProbing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,683594.1,80893.1,83452.2,72325.-1.-1.-1.
+QuadraticProbing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,78125.2,1292.2,02122.4,31586.-1.-1.-1.
+QuadraticProbing.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.-1.0,878906.2,67174.2,4495.8,72031.-1.-1.-1.

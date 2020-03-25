@@ -109,12 +109,7 @@ int main(){
   double rocupacion = (double) tocupacion / (double)Tmida;
   
   cout << "Nombre: ExactFit"<< endl;
-  cout << "Colisions Insert: " << cinsert << endl;
-  cout << "Colisions Search: " << csearch1+csearch2 << endl;
-  cout << "Colisions Totals: " << (double)cinsert+csearch1+csearch2 << endl;
-  cout << "Total Insert: " << tinsert << endl;
-  cout << "Total Comandes: " << tinsert+tsearch1+tsearch2  << endl;
-  cout << "Ratio de ocupacion contenedores: " << rocupacion << endl;
+  cout << "Ratio de ocupación: " << rocupacion << endl;
   cout << "Media prueba teórica insertados: " << csearch1/(double)tsearch1 << endl;
   cout << "Media prueba teórica no insertados: " << csearch2/(double)tsearch2 << endl;
   

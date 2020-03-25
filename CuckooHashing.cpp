@@ -62,7 +62,7 @@ int hash_f1(int key){ // Hash function 1
 
 //Second Hash function
 int hash_f2(int key){ // Hash function 1
-	return (key%509)%size;
+	return (key)%size;
 }
 
 //Function that given a key search if it is or not in the hash tables

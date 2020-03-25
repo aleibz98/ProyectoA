@@ -25,20 +25,6 @@ int totalSearch2;
 
 double ocupacion;
 
-int myXOR(int x, int y){
-	int res = 0;
-	for (int j = 31; j>=0; j--){
-		bool b1 = x & (1<<j);
-		bool b2 = y & (1<<j);
-
-		bool xoredBit = (b1&b2) ? 0 : (b1|b2);
-
-		res <<= 1;
-		res |= xoredBit;
-	}
-	return res;
-}
-
 //Function that initializate the hash table to the desired size
 void initHashTable(){
 	hashTable.resize(size, -1);
@@ -57,7 +43,7 @@ void print(){
 	*/
     cout << "Ratio de ocupación: " << ocupacion << endl;
 
-    cout << "Media probes teórica: " << -(1/ocupation)*log(1-ocupation)  << endl;
+    cout << "Media probes teórica: " << -(1/ocupacion)*log(1-ocupacion)  << endl;
     cout << "Media probes empírica insertados: " << (colisionsSearch1)/float(totalSearch1) << endl;
     cout << "Media probes empírica no insertados: " << (colisionsSearch2)/float(totalSearch2) << endl;
 
@@ -65,12 +51,12 @@ void print(){
 }
 
 //First Hash function
-int hash_f1(int key){ // Hash function 1
+int hash_f2(int key){ // Hash function 1
 	return key%size;
 }
 
 //First Hash function
-int hash_f2(int key){ // Hash function 1
+int hash_f1(int key){ // Hash function 1
 	return key%509;
 }
 
@@ -81,7 +67,7 @@ bool search(int key, int round){
 	int valuef1 = hash_f1(key); // We calculate position given by 1st Hash Function
 	int valuef2 = hash_f2(key); // We calculate position given by 2nd Hash Function
 	int dhval = (valuef1+valuef2*j)%size; //Double hashing value j=0
-	while(hashTable[dhval] != key){	// Hash position not empty
+	while(hashTable[dhval] != key and hashTable[dhval] !=  -1){	// Hash position not empty
 		if(j == size) return false;	//if j too big return "can't insert"
 		if(round == 1) miss_search1++;
 		else miss_search2++;

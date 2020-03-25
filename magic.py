@@ -1,4 +1,3 @@
-import matplotlib.pyplot as plt
 import subprocess
 from subprocess import PIPE
 
@@ -21,15 +20,15 @@ def swapDotComma(string):
 
     return res
 
-def averageProvesVsAlpha(a,b,c,d):
-    plt.plot(a, b, label='teórica')
-    plt.plot(a, c, label= 'claves insertadas')
-    plt.plot(a, d, label= 'claves no insertadas')
-    plt.xlabel('ratio de ocupación')
-    plt.ylabel('media de probes')
-    plt.title('Linear Probing')
-    plt.legend()
-    plt.show()
+#def averageProvesVsAlpha(a,b,c,d):
+#    plt.plot(a, b, label='teórica')
+#    plt.plot(a, c, label= 'claves insertadas')
+#    plt.plot(a, d, label= 'claves no insertadas')
+#    plt.xlabel('ratio de ocupación')
+#    plt.ylabel('media de probes')
+#    plt.title('Linear Probing')
+#    plt.legend()
+#    plt.show()
 
 cmd = ['ls', 'outputs/']
 proc = subprocess.Popen(cmd, stdout=PIPE, stdin=PIPE)
@@ -49,6 +48,7 @@ for file in folder:
     actual = open("outputs/"+name,'r')
     for line in actual:
         line = str(line)
+        print(line)
         k, v = line.split(': ')
         v = v.rstrip("\n")
         dictionary[k.replace("{'}",'')] = v

@@ -150,13 +150,7 @@ int main(){
   double rocupacion = (double) tocupacion / (double)Tmida;
   
   cout << "Nombre: MovetoFront"<< endl;
-  cout << "Colisions Insert: " << cinsert << endl;
-  cout << "Colisions Search: " << csearch1+csearch2 << endl;
-  cout << "Colisions Totals: " << cinsert+csearch1+csearch2  << endl;
-  cout << "Total Insert: " << tinsert << endl;
-  cout << "Total Search: " << tsearch1+tsearch2  << endl;
-  cout << "Total Comandes: " << tinsert + tsearch1+tsearch2  << endl;
-  cout << "Ratio de ocupacion contenedor principal: " << rocupacion << endl;
+  cout << "Ratio de ocupación contenedor: " << rocupacion << endl;
   cout << "Media probes empírica insertados: " << (double)csearch1/(double)tsearch1 << endl;
   cout << "Media probes empírica no insertados: " << (double)csearch2/(double)tsearch2 << endl;
   
