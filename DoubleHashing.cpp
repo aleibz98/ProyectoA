@@ -66,13 +66,13 @@ bool search(int key, int round){
 	int j = 0;
 	int valuef1 = hash_f1(key); // We calculate position given by 1st Hash Function
 	int valuef2 = hash_f2(key); // We calculate position given by 2nd Hash Function
-	int dhval = (valuef1+valuef2*j)%size; //Double hashing value j=0
+	int dhval = (valuef1+(valuef2*j))%size; //Double hashing value j=0
 	while(hashTable[dhval] != key and hashTable[dhval] !=  -1){	// Hash position not empty
 		if(j == size) return false;	//if j too big return "can't insert"
 		if(round == 1) miss_search1++;
 		else miss_search2++;
 		j++;
-		dhval = (valuef1+valuef2*j);
+		dhval = (valuef1+(valuef2*j))%size;
 		//cout << "bucle; " << j << "val f1: " << valuef1 << " val f2: " << valuef2 << endl;
 	}
 	//Found an empty position
@@ -97,7 +97,7 @@ int insert(int key){
 			}
 			miss_insert++;
 			j++;
-			dhval = (valuef1+valuef2*j);
+			dhval = (valuef1+(valuef2*j))%size;
 			//cout << "bucle; " << j << "val f1: " << valuef1 << " val f2: " << valuef2 << endl;
 		}
 		//Found an empty position
@@ -154,4 +154,3 @@ int main(){
 
 	print(); //PRINT
 }
-
