@@ -1,12 +1,13 @@
-Quadratic Probing
-c1 0.5
-c2 0.5
-Colisions Insert 2
-Colisions Search 115
-Colisions Totals 117
-Total Inserts 50
-Total Searches 202
-Ratio de ocupación 0.0976562
+Nombre: Quadratic Probing
+c1: 0.5
+c2: 0.5
+Colisions Insert: 2
+Colisions Search: 115
+Colisions Totals: 117
+Total Inserts: 50
+Total Searches: 202
+Total comandes: 252
+Ratio de ocupación: 0.0976562
 Media probes teórica: 1.05393
 Media probes empírica insertados: 1.0297
 Media probes empírica no insertados: 0.108911

@@ -99,18 +99,18 @@ void instrucciones() {
 }
 
 void stats() {
-    cout << "Quadratic Probing" << endl;
-    cout << "c1 " << c1 << endl;
-    cout << "c2 " << c2 << endl;
-    cout << "Colisions Insert " << colisionsInsert << endl;
-    cout << "Colisions Search " << colisionsSearch1 + colisionsSearch2 << endl;
-    cout << "Colisions Totals " << colisionsInsert + colisionsSearch1 + colisionsSearch2 << endl;
+    cout << "Nombre: Quadratic Probing" << endl;
+    cout << "c1: " << c1 << endl;
+    cout << "c2: " << c2 << endl;
+    cout << "Colisions Insert: " << colisionsInsert << endl;
+    cout << "Colisions Search: " << colisionsSearch1 + colisionsSearch2 << endl;
+    cout << "Colisions Totals: " << colisionsInsert + colisionsSearch1 + colisionsSearch2 << endl;
 
-    cout << "Total Inserts " << totalInsert << endl;
-    cout << "Total Searches " << totalSearch1 + totalSearch2 << endl;
-    cout << "Total comandes " << totalInsert + totalSearch1 + totalSearch2 << endl;
+    cout << "Total Inserts: " << totalInsert << endl;
+    cout << "Total Searches: " << totalSearch1 + totalSearch2 << endl;
+    cout << "Total comandes: " << totalInsert + totalSearch1 + totalSearch2 << endl;
 
-    cout << "Ratio de ocupación " << ocupacion << endl;
+    cout << "Ratio de ocupación: " << ocupacion << endl;
 
     cout << "Media probes teórica: " << 1 - log(1-ocupacion) - ocupacion/2 << endl;
     cout << "Media probes empírica insertados: " << (colisionsSearch1)/float(totalSearch1) << endl;
