@@ -1,0 +1,6 @@
+Nombre de funcions de Hash: 5
+Colisions de les funcions de hash: 42
+Probabilitat aproximada de un fals positiu: 0.651647
+Probabilitat fals positiu empirica: 1.292
+Probabilitat aproximada de fals positiu a taula distribuida: 0.652376
+Probabilitat de fals positiu empirica a taula distribuida: 1.292
