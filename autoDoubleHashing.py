@@ -1,7 +1,7 @@
 import subprocess
 from subprocess import PIPE
 
-for i in range (10,110,10):
+for i in range (10,100,10):
     intest = "tests/input" + str(i) + "%.txt"
     input = open(intest,'rb')
     stdout = input.read()

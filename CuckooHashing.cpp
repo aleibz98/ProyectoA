@@ -29,20 +29,6 @@ double ocupacion;
 
 int insert1(int key, int it);
 
-int myXOR(int x, int y){
-	int res = 0;
-	for (int j = 31; j>=0; j--){
-		bool b1 = x & (1<<j);
-		bool b2 = y & (1<<j);
-
-		bool xoredBit = (b1&b2) ? 0 : (b1|b2);
-
-		res <<= 1;
-		res |= xoredBit;
-	}
-	return res;
-}
-
 //Function that initializate the hash table to the desired size
 void initHashTable(){
 	hashTable1.resize(size, -1);
@@ -60,7 +46,7 @@ void print(){
     cout << "Total Search: " << totalSearch1 + totalSearch2 << endl;
     cout << "Total comandes: " <<  totalInsert + totalSearch1 + totalSearch2 << endl;
 
-    cout << "Ratio de ocupacion: " << ocupacion << endl;
+    cout << "Ratio de ocupación: " << ocupacion << endl;
 
     cout << "Media probes teórica: " << 0.5 * (1 + 1/(1-ocupacion))  << endl;
     cout << "Media probes empírica insertados: " << (colisionsSearch1)/float(totalSearch1) << endl;
@@ -69,42 +55,25 @@ void print(){
     return;
 }
 
-void printBitVec(vector<char> v){
-	for(int i = 0; i<v.size(); i++) cout << v[i];
-	cout << endl;
-}
-
-vector<char> getBit(int n){
-	vector<char> v(32,'0');
-	int b=0;
-	while(n>0){
-		v[b] += (char)n%2;
-		n = n/2;
-		b++;
-	}
-	return v;
-}
-
 //First Hash function
 int hash_f1(int key){ // Hash function 1
-	return key%503;
+	return (key%503)%size;
 }
 
 //Second Hash function
 int hash_f2(int key){ // Hash function 1
-	return key%509;
+	return (key%509)%size;
 }
 
 //Function that given a key search if it is or not in the hash tables
 //return (1) CORRECT     (2) FULL     (3) CAN'T J>SIZE
 bool search(int key, int round){
 	int j = 0;
-	int valuef1 = hash_f1(key)%size; // We calculate position given by 1st Hash Function
-	int valuef2 = hash_f2(key)%size; // We calculate position given by 2nd Hash Function
-	if(hashTable1[valuef1] == key | hashTable2[valuef2] == key){
+	int valuef1 = hash_f1(key); // We calculate position given by 1st Hash Function
+	int valuef2 = hash_f2(key); // We calculate position given by 2nd Hash Function
+	if(hashTable1[valuef1] == key || hashTable2[valuef2] == key){
 		if (round == 1) colisionsSearch1++;
 		else colisionsSearch2++;
-
 		return true;
 	}
 	else{
@@ -148,7 +117,7 @@ int insert1(int key, int it){
 	//cout << "entro en insert1 con key: " << key << " it: " << it << endl;
 	if(it == (2*size)) return 3; //Can't insert key in either HashTable
 	if(occuped_space1 != size){
-		int valuef1 = hash_f1(key)%size; // We calculate position given by 1st Hash Function
+		int valuef1 = hash_f1(key); // We calculate position given by 1st Hash Function
 		if(hashTable1[valuef1] != -1){ // If hashTable1 pos occuped
 			if(hashTable1[valuef1] == key){	//if we find the same key we wanted to insert
 				colisionsInsert++;
@@ -177,7 +146,7 @@ int main(){
 	totalSearch1 = 0;
 	totalSearch2 = 0;
 	it = 0;
-
+    cin >> size;
 
 	initHashTable();
 
@@ -206,7 +175,7 @@ int main(){
 		cin >> key;
 	}
 
-	ocupacion = (occuped_space1+occuped_space2)/(size*2);
+	ocupacion = (occuped_space1+occuped_space2)/double(size*2);
 
 	print(); //PRINT
 }

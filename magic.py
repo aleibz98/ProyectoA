@@ -72,17 +72,17 @@ for dict in total:
 
 
 #Linear and quadratic
-teorica = []
-empiricaInsert = []
-empiricaNoInsert = []
-alpha = []
+#teorica = []
+#empiricaInsert = []
+#empiricaNoInsert = []
+#alpha = []
 
-for dict in total:
-    if dict['Nombre'] == 'LinearProbing':
-        teorica.append(dict['Media probes teórica'])
-        empiricaInsert.append(dict['Media probes empírica insertados'])
-        empiricaNoInsert.append(dict['Media probes empírica no insertados'])
-        alpha.append(dict['Ratio de ocupación'])
+#for dict in total:
+#    if dict['Nombre'] == 'LinearProbing':
+#        teorica.append(dict['Media probes teórica'])
+#        empiricaInsert.append(dict['Media probes empírica insertados'])
+#        empiricaNoInsert.append(dict['Media probes empírica no insertados'])
+#        alpha.append(dict['Ratio de ocupación'])
 
 #averageProvesVsAlpha(alpha,teorica,empiricaInsert,empiricaNoInsert)
 
