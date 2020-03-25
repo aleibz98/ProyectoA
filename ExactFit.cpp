@@ -40,10 +40,9 @@ void search1(vector<map<int,bool> > &Tabla, int paraula){
   
   int key = hash(paraula,midav);
   
-  if(not Tabla[key].empty()) 
-    ++csearch1;
-    
-  }
+  if(not Tabla[key].empty()) ++csearch1;
+  //si la tabla esta llena tarda log midamap colisiones en encontrarlo
+  
   
 }
 
@@ -53,16 +52,9 @@ void search2(vector<map<int,bool> > &Tabla, int paraula){
   
   int key = hash(paraula,midav);
   
-  if(Tabla[key].empty()) cout << "NO es troba a la taula" << endl;
+ if(not Tabla[key].empty()) ++csearch2;
+  // si la tabla esta llena tarda log midamap colisiones en encontrarlo
   
-  else{
-    
-    if(Tabla[key][paraula]) cout << "El element es troba a la taula" << endl;
-    else cout << "NO es troba a la taula" << endl;
-    
-    
-    
-  }
   
 }
 
