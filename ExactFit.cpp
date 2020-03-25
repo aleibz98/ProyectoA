@@ -115,8 +115,8 @@ int main(){
   cout << "Total Insert:" << tinsert << endl;
   cout << "Total Comandes:" << tinsert+tsearch1+tsearch2  << endl;
   cout << "Ratio de ocupacion contenedores:" << rocupacion << endl;
-  cout << "Total busqueda 1:" << csearch1/(double)tsearch1 << endl;
-  cout << "Total busqueda 2:" << csearch2/(double)tsearch2 << endl;
+  cout << "Media prueba teórica insertados:" << csearch1/(double)tsearch1 << endl;
+  cout << "Media prueba teórica no insertados:" << csearch2/(double)tsearch2 << endl;
   
  
   
